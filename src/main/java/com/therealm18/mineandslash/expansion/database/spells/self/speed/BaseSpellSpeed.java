@@ -1,16 +1,15 @@
-package com.therealm18.mineandslash.expansion.database.spells.self;
+package com.therealm18.mineandslash.expansion.database.spells.self.speed;
 
 import com.robertx22.mine_and_slash.database.spells.bases.BaseSpell;
 import com.robertx22.mine_and_slash.database.spells.bases.SpellBuffCheck;
 import com.robertx22.mine_and_slash.uncommon.effectdatas.interfaces.IBuffableSpell.SpellBuffType;
 import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
-import com.therealm18.mineandslash.expansion.potion_effect.all.AOEHastePotion;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 
-public abstract class BaseSpellHaste  extends BaseSpell {
+public abstract class BaseSpellSpeed  extends BaseSpell {
 
     @Override
     public int useTimeTicks() {
@@ -41,7 +40,7 @@ public abstract class BaseSpellHaste  extends BaseSpell {
     
     public void checkAddLightBuff(PlayerEntity caster, SpellBuffCheck buffable) {
         if (buffable.getBuff().equals(SpellBuffType.Light_Aoe_Regen)) {
-            caster.addPotionEffect(new EffectInstance(Effects.HASTE, 200));
+            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200));
         }
 
     }

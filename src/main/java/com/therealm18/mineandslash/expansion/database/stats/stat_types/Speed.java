@@ -6,8 +6,8 @@ import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
 
 import net.minecraft.entity.LivingEntity;
 
-public class Haste extends Stat {
-    public static String GUID = "Haste";
+public class Speed  extends Stat {
+    public static String GUID = "Speed";
 
     @Override
     public int iconSpriteNumber() {
@@ -21,10 +21,10 @@ public class Haste extends Stat {
 
     @Override
     public String locDescForLangFile() {
-        return "Allows you to mine faster.";
+        return "Allows you to move faster.";
     }
 
-    public Haste() {
+    public Speed() {
     }
 
     @Override
@@ -57,6 +57,6 @@ public class Haste extends Stat {
 
     @Override
     public String locNameForLangFile() {
-        return "Haste";
+        return "Speed";
     }
 }

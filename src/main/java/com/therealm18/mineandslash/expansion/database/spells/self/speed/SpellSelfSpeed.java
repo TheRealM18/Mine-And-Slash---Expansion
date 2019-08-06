@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.database.spells.self;
+package com.therealm18.mineandslash.expansion.database.spells.self.speed;
 
 import com.robertx22.mine_and_slash.database.spells.bases.EffectCalculation;
 import com.robertx22.mine_and_slash.database.spells.bases.SpellBuffCheck;
@@ -9,9 +9,9 @@ import com.robertx22.mine_and_slash.uncommon.effectdatas.SpellBuffEffect;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.ParticleUtils;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.SoundUtils;
-import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
-import com.therealm18.mineandslash.expansion.database.stats.stat_types.Haste;
-import com.therealm18.mineandslash.expansion.potion_effect.all.AOEHastePotion;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
+import com.therealm18.mineandslash.expansion.database.stats.stat_types.Speed;
+import com.therealm18.mineandslash.expansion.potion_effect.all.AOESpeedPotion;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -21,7 +21,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 
-public class SpellSelfHaste extends BaseSpellHaste {
+public class SpellSelfSpeed extends BaseSpellSpeed {
 	
     @Override
     public int useTimeTicks() {
@@ -30,7 +30,7 @@ public class SpellSelfHaste extends BaseSpellHaste {
 
     @Override
     public String GUID() {
-        return "spell_self_haste";
+        return "spell_self_speed";
     }
 
     @Override
@@ -45,18 +45,18 @@ public class SpellSelfHaste extends BaseSpellHaste {
 
     @Override
     public EffectCalculation ScalingValue() {
-        return new EffectCalculation(new Haste(), 0.75F);
+        return new EffectCalculation(new Speed(), 0.75F);
 
     }
 
     @Override
     public Item SpellItem() {
-        return ItemSelfHaste.ITEM;
+        return ItemSelfSpeed.ITEM;
     }
 
     @Override
     public ITextComponent GetDescription(SpellItemData data) {
-        return CLOC.tooltip("spell_self_haste");
+        return CLOC.tooltip("spell_self_speed");
     }
 
     @Override
@@ -71,9 +71,9 @@ public class SpellSelfHaste extends BaseSpellHaste {
                 UnitData unit = Load.Unit(caster);
 
                 int healed = (int) (data.GetBaseValue() + data.GetScalingValue() * unit.getUnit()
-                        .healthData().Value / 10);
+                        .healthData().Value / 100);
 
-                caster.addPotionEffect(new EffectInstance(AOEHastePotion.INSTANCE, 400, healed));
+                caster.addPotionEffect(new EffectInstance(AOESpeedPotion.INSTANCE, 400, healed));
 
                 // spell buffs
                 SpellBuffCheck check = new SpellBuffCheck(this.Type());
@@ -92,5 +92,4 @@ public class SpellSelfHaste extends BaseSpellHaste {
 
         return true;
     }
-
 }

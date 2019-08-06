@@ -29,11 +29,11 @@ This expands the current features of Mine and Slash.
     modId="curios"
     mandatory=true
     versionRange="[0,]"
-    ordering="AFTER"
+    ordering="NONE"
     side="BOTH"
 [[dependencies.mineandslashexpansion]]
     modId="mmorpg"
     mandatory=true
     versionRange="[2,]"
-    ordering="AFTER"
+    ordering="NONE"
     side="BOTH"

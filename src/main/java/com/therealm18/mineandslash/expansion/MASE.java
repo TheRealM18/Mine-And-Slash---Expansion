@@ -1,17 +1,20 @@
 package com.therealm18.mineandslash.expansion;
 
+import net.minecraft.item.Item;
+import net.minecraft.potion.Effect;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.robertx22.mine_and_slash.mmorpg.RegisterEvents;
-import com.robertx22.mine_and_slash.mmorpg.registers.common.ConfigRegister;
-import com.robertx22.mine_and_slash.onevent.world.OnStartResetMaps;
-import com.therealm18.mineandslash.expansion.db_lists.registry.ExpansionRegistry;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
+import com.therealm18.mineandslash.expansion.db_lists.initializers.Spells;
+import com.therealm18.mineandslash.expansion.potion_effect.all.AOEHastePotion;
+import com.therealm18.mineandslash.expansion.potion_effect.all.AOESpeedPotion;
 
 @Mod("mineandslashexpansion")
 @EventBusSubscriber
@@ -22,31 +25,21 @@ public class MASE
     public MASE() {
 
         System.out.println("Starting Mine and Slash - Expansion");
-
-        RegisterEvents.register();
-
-        ConfigRegister.register(); // MUST BE IN MAIN CLASS
-        ConfigRegister.load();  // MUST BE IN MAIN CLASS
-
-        OnStartResetMaps.OnStartResetMaps();
-
-        ExpansionRegistry.init(); // after config registerAll
-
-//        StructurePieceRegisters.reg();
+        
+        new Spells().registerAll();
     }
-    
+
     @SubscribeEvent
-    public static void onServerStarting(FMLServerStartingEvent event) {
-//        CommandRegister.Register(event.getServer());
-//        ConfigRegister.regAndLoadNonForgeConfigs();
+    public static void register(RegistryEvent.Register<Effect> event) {
 
-//        if (RUN_DEV_TOOLS) { // CHANGE ON PUBLIC BUILDS TO FALSE
-//            TestManager.RunAllTests();
-//            CreateLangFile.create();
-//            GenerateCurioDataJsons.generate();
-//
-//        }
-
+        event.getRegistry().register(AOEHastePotion.INSTANCE);
+        event.getRegistry().register(AOESpeedPotion.INSTANCE);
     }
 
+    @SubscribeEvent
+    public static void registerItems(RegistryEvent.Register<Item> event) {
+
+    	event.getRegistry().register(new ItemSelfHaste());
+    	event.getRegistry().register(new ItemSelfSpeed());
+    }
 }
