@@ -14,7 +14,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.0'
-group = 'com.therealm18.mase' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'com.therealm18.mineandslashexpansion' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Mine and Slash - Expansion'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -116,11 +116,11 @@ jar {
     manifest {
         attributes([
             "Specification-Title": "mineandslashexpansion",
-            "Specification-Vendor": "mmorpg",
+            "Specification-Vendor": "mineandslashexpansion",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"mmorpg",
+            "Implementation-Vendor" :"mineandslashexpansion",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
