@@ -2,7 +2,7 @@ package com.therealm18.mineandslash.expansion.potion_effect.all;
 
 import com.robertx22.mine_and_slash.potion_effects.SpellPotionBase;
 import com.therealm18.mineandslash.expansion.Ref;
-import com.therealm18.mineandslash.expansion.database.spells.self.haste.SpellSelfHaste;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfHaste;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

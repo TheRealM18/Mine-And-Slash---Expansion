@@ -21,8 +21,8 @@ import org.apache.logging.log4j.Logger;
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
-import com.therealm18.mineandslash.expansion.database.spells.self.haste.SpellSelfHaste;
-import com.therealm18.mineandslash.expansion.database.spells.self.speed.SpellSelfSpeed;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfHaste;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfSpeed;
 import com.therealm18.mineandslash.expansion.potion_effect.all.AOEHastePotion;
 import com.therealm18.mineandslash.expansion.potion_effect.all.AOESpeedPotion;
 
