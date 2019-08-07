@@ -33,14 +33,14 @@ public abstract class BaseSpellHaste  extends BaseSpell {
     public void checkZephyrSpeedBoost(PlayerEntity caster, SpellBuffCheck buffable) {
 
         if (buffable.getBuff().equals(SpellBuffType.Zephyr_Speed_Boost)) {
-            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200));
+            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200, 10));
         }
 
     }
     
     public void checkAddLightBuff(PlayerEntity caster, SpellBuffCheck buffable) {
         if (buffable.getBuff().equals(SpellBuffType.Light_Aoe_Regen)) {
-            caster.addPotionEffect(new EffectInstance(Effects.HASTE, 200));
+            caster.addPotionEffect(new EffectInstance(Effects.HASTE, 200, 10));
         }
 
     }
