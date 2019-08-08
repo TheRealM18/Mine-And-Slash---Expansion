@@ -1,10 +1,13 @@
 package com.therealm18.mineandslash.expansion.database.spells.self;
 
+import java.util.ArrayList;
+
 import com.robertx22.mine_and_slash.database.spells.bases.BaseSpell;
 import com.robertx22.mine_and_slash.database.spells.bases.EffectCalculation;
 import com.robertx22.mine_and_slash.database.spells.bases.SpellBuffCheck;
 import com.robertx22.mine_and_slash.saveclasses.item_classes.SpellItemData;
 import com.robertx22.mine_and_slash.uncommon.effectdatas.SpellBuffEffect;
+import com.robertx22.mine_and_slash.uncommon.effectdatas.interfaces.IBuffableSpell.SpellBuffType;
 import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
@@ -62,22 +65,22 @@ public class SpellSelfHaste extends BaseSpell {
 
 	@Override
 	public boolean cast(World world, PlayerEntity caster, Hand hand, int ticksInUse, SpellItemData data) {
-        try {
-
-        	if (!world.isRemote) {
-
-        		caster.addPotionEffect(new EffectInstance(Effects.HASTE, 400, 10));
-          
-        		// spell buffs
-        		SpellBuffCheck check = new SpellBuffCheck(this.Type());
-        		SpellBuffEffect spelleffect = new SpellBuffEffect(caster, check);
-        		spelleffect.Activate();
-        	} else {
-
-        	}
-        } catch (Exception e) {
-        	e.printStackTrace();
-        }
+//        try {
+//
+//        	if (!world.getWorld().isRemote) {
+//
+//        		caster.addPotionEffect(new EffectInstance(Effects.HASTE, 400, 10));
+//          
+//        		// spell buffs
+//        		SpellBuffCheck check = new SpellBuffCheck(this.Type());
+//        		SpellBuffEffect spelleffect = new SpellBuffEffect(caster, check);
+//        		spelleffect.Activate();
+//        	} else {
+//
+//        	}
+//        } catch (Exception e) {
+//        	e.printStackTrace();
+//        }
 
   return true;
 }
@@ -86,4 +89,40 @@ public class SpellSelfHaste extends BaseSpell {
 	public int useTimeTicks() {
 		return 20;
 	}
+
+    public void checkZephyrSpeedBoost(PlayerEntity caster, SpellBuffCheck buffable) {
+
+        if (buffable.getBuff().equals(SpellBuffType.Zephyr_Speed_Boost)) {
+            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200));
+        }
+
+    }
+
+    public void checkPurityRemoveNegativeEffect(PlayerEntity caster,
+                                                SpellBuffCheck buffable) {
+
+        if (buffable.getBuff().equals(SpellBuffType.Purity_Remove_Negative_Effects)) {
+            for (EffectInstance pot : new ArrayList<EffectInstance>(caster.getActivePotionEffects())) {
+                if (pot.getPotion().isBeneficial() == false) {
+                    caster.removePotionEffect(pot.getPotion());
+                    break;
+                }
+            }
+        }
+
+    }
+
+    public void checkAddLightBuff(PlayerEntity caster, SpellBuffCheck buffable) {
+        if (buffable.getBuff().equals(SpellBuffType.Light_Aoe_Regen)) {
+            caster.addPotionEffect(new EffectInstance(Effects.HASTE, 200, 10));
+        }
+
+    }
+
+    public void checkSpellBuffs(PlayerEntity caster, SpellBuffCheck buffable) {
+        checkZephyrSpeedBoost(caster, buffable);
+        checkAddLightBuff(caster, buffable);
+        checkPurityRemoveNegativeEffect(caster, buffable);
+    }
+
 }
