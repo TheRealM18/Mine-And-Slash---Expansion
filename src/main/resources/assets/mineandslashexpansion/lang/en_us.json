@@ -10,8 +10,15 @@
 	"mmorpg.stat.speed": "Movement",
 	"mmorpg.stat.feed": "Feeds you",
 	"mmorpg.stat.haste": "Mining speed",
-	"mmorpg.stat.jump": "Jumping",
-	"mmorpg.stat.feather": "Falling",
+	"mmorpg.stat.jumpboost": "Jumping",
+	"mmorpg.stat.featherfall": "Falling",
+	
+	
+	"mmorpg.tooltip.spell_self_speed": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_feed": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_haste": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_jump": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_featherfall": "Cast this spell to yourself",
 	
 	
 	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - Information",

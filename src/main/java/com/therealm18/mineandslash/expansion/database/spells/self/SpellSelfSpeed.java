@@ -21,7 +21,7 @@ public class SpellSelfSpeed extends BaseSpell {
 
 	@Override
 	public int BaseValue() {
-		return 10;
+		return 30;
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class SpellSelfSpeed extends BaseSpell {
 
 	@Override
 	public int ManaCost() {
-		return 40;
+		return 80;
 	}
 
 	@Override
