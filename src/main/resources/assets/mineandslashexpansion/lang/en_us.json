@@ -7,23 +7,35 @@
 	"item.mineandslashexpansion.spell_selffeather": "Fall softer",
 	
 	
+	"mmorpg.stat.speed": "Movement",
+	"mmorpg.stat.feed": "Feeds you",
+	"mmorpg.stat.haste": "Mining speed",
+	"mmorpg.stat.jump": "Jumping",
+	"mmorpg.stat.feather": "Falling",
 	
-	"mineandslashexpansion.advancement.title.mineandslashexpansion": "Mine and Slash - Expansion",
-	"mineandslashexpansion.advancement.title.version": "Version",
+	
+	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - Information",
+	"mineandslashexpansion.advancement.title.version": "Mod Version",
+	"mineandslashexpansion.advancement.title.artistsroot": "Artists",
 	"mineandslashexpansion.advancement.title.artist1": "Artist",
 	"mineandslashexpansion.advancement.title.artist2": "Artist",
-	"mineandslashexpansion.advancement.title.models1": "Models",
+	"mineandslashexpansion.advancement.title.modelersroot": "Modelers",
+	"mineandslashexpansion.advancement.title.models1": "Modeler",
+	"mineandslashexpansion.advancement.title.codersroot": "Coders",
 	"mineandslashexpansion.advancement.title.coder1": "Coder",
-	"mineandslashexpansion.advancement.title.support": "Support",
+	"mineandslashexpansion.advancement.title.support": "Discord For help",
 	
 	
 	
 	"mineandslashexpansion.advancement.desc.welcomeeveryone": "Welcome Mine and Slash - Expansion",
-	"mineandslashexpansion.advancement.desc.version": "1.0.5",
+	"mineandslashexpansion.advancement.desc.version": "1.0.6",
+	"mineandslashexpansion.advancement.desc.artistsroot": "This are the artist that help out every day",
 	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
 	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.modelersroot": "This are the modelers that help out every day",
 	"mineandslashexpansion.advancement.desc.models1": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.codersroot": "This are the developers of the mod",
 	"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
-	"mineandslashexpansion.advancement.desc.support": "https://discord.gg/YSYMcMb"
+	"mineandslashexpansion.advancement.desc.support": "YSYMcMb"
 	
 }

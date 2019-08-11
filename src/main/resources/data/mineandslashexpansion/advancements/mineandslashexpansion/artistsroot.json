@@ -1,0 +1,25 @@
+{
+	"parent": "mineandslashexpansion:mineandslashexpansion/root",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:spell_selffeed"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.artistsroot"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.artistsroot"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

@@ -1,0 +1,25 @@
+{
+	"parent": "mineandslashexpansion:mineandslashexpansion/root",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:spell_selfhaste"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.modelersroot"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.modelersroot"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

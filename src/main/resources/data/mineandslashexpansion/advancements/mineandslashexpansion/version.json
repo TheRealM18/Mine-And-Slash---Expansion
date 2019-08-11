@@ -1,0 +1,25 @@
+{
+	"parent": "mineandslashexpansion:mineandslashexpansion/support",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:spell_selfspeed"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.version"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.version"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

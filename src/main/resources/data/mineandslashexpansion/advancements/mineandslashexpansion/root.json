@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:spell_selffeather"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.welcomeeveryone"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.welcomeeveryone"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}
