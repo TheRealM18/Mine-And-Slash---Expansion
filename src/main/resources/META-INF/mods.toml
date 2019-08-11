@@ -1,12 +1,12 @@
 modLoader="javafml" #mandatory
 loaderVersion="[28,)" #mandatory (26 is current forge version)
-issueTrackerURL="http://my.issue.tracker/" #optional
+#issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId="mineandslashexpansion" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Mine & Slash Expansion" #mandatory
-updateJSONURL="http://myurl.me/" #optional
-displayURL="http://example.com/" #optional
+#updateJSONURL="http://myurl.me/" #optional
+displayURL="http://therealm18.com/" #optional
 logoFile="examplemod.png" #optional
 credits="The Mine & Slash Team for a great mod" #optional
 authors="TheRealM18" #optional
@@ -16,7 +16,7 @@ This expands the current features of Mine and Slash.
 [[dependencies.mineandslashexpansion]]
     modId="forge"
     mandatory=true
-    versionRange="[28,)"
+    versionRange="[28.0.45)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.mineandslashexpansion]]
@@ -34,6 +34,6 @@ This expands the current features of Mine and Slash.
 [[dependencies.mineandslashexpansion]]
     modId="mmorpg"
     mandatory=true
-    versionRange="[2,]"
+    versionRange="[2.4.7]"
     ordering="AFTER"
     side="BOTH"
