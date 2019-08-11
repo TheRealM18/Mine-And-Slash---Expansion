@@ -6,7 +6,7 @@ import com.robertx22.mine_and_slash.saveclasses.item_classes.SpellItemData;
 import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfJumpBoost;
-import com.therealm18.mineandslash.expansion.database.stats.stat_types.Feed;
+import com.therealm18.mineandslash.expansion.database.stats.stat_types.JumpBoost;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -46,7 +46,7 @@ public class SpellSelfJumpBoost extends BaseSpell {
 
 	@Override
 	public EffectCalculation ScalingValue() {
-		return new EffectCalculation(new Feed(), 0.75F);
+		return new EffectCalculation(new JumpBoost(), 0.75F);
 	}
 
 	@Override

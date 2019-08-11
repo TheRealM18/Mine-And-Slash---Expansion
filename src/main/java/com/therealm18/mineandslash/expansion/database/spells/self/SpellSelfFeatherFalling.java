@@ -6,8 +6,7 @@ import com.robertx22.mine_and_slash.saveclasses.item_classes.SpellItemData;
 import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
-import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
-import com.therealm18.mineandslash.expansion.database.stats.stat_types.Speed;
+import com.therealm18.mineandslash.expansion.database.stats.stat_types.FeatherFalling;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -47,7 +46,7 @@ public class SpellSelfFeatherFalling extends BaseSpell {
 
 	@Override
 	public EffectCalculation ScalingValue() {
-		return new EffectCalculation(new Speed(), 0.75F);
+		return new EffectCalculation(new FeatherFalling(), 0.75F);
 	}
 
 	@Override
