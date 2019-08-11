@@ -19,12 +19,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeed;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfJumpBoost;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeatherFalling;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeed;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfHaste;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfJumpBoost;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfSpeed;
-import com.therealm18.mineandslash.expansion.potion_effect.all.AOEHastePotion;
-import com.therealm18.mineandslash.expansion.potion_effect.all.AOESpeedPotion;
 
 @Mod("mineandslashexpansion")
 @EventBusSubscriber
@@ -61,8 +65,11 @@ public class MASE
 
     private void processIMC(final InterModProcessEvent event)
     {
+        MineAndSlashAPI.addSpell(new SpellSelfFeed());
         MineAndSlashAPI.addSpell(new SpellSelfHaste());
+        MineAndSlashAPI.addSpell(new SpellSelfJumpBoost());
         MineAndSlashAPI.addSpell(new SpellSelfSpeed());
+        MineAndSlashAPI.addSpell(new SpellSelfFeatherFalling());
     }
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
@@ -77,13 +84,14 @@ public class MASE
 
     		event.getRegistry().register(new ItemSelfHaste());
     		event.getRegistry().register(new ItemSelfSpeed());
+    		event.getRegistry().register(new ItemSelfFeed());
+    		event.getRegistry().register(new ItemSelfJumpBoost());
+    		event.getRegistry().register(new ItemSelfFeatherFalling());
     	}
     	
         @SubscribeEvent
     	public static void register(RegistryEvent.Register<Effect> event) {
 
-        	event.getRegistry().register(AOEHastePotion.INSTANCE);
-        	event.getRegistry().register(AOESpeedPotion.INSTANCE);
     	}
     	
         @SubscribeEvent
