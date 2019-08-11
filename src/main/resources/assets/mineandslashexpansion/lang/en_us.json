@@ -1,0 +1,29 @@
+{
+
+	"item.mineandslashexpansion.spell_selffeed": "Feed yourself",
+	"item.mineandslashexpansion.spell_selfhaste": "Mine Faster",
+	"item.mineandslashexpansion.spell_selfjump": "Jump Higher",
+	"item.mineandslashexpansion.spell_selfspeed": "Go Farther",
+	"item.mineandslashexpansion.spell_selffeather": "Fall softer",
+	
+	
+	
+	"mineandslashexpansion.advancement.title.mineandslashexpansion": "Mine and Slash - Expansion",
+	"mineandslashexpansion.advancement.title.version": "Version",
+	"mineandslashexpansion.advancement.title.artist1": "Artist",
+	"mineandslashexpansion.advancement.title.artist2": "Artist",
+	"mineandslashexpansion.advancement.title.models1": "Models",
+	"mineandslashexpansion.advancement.title.coder1": "Coder",
+	"mineandslashexpansion.advancement.title.support": "Support",
+	
+	
+	
+	"mineandslashexpansion.advancement.desc.welcomeeveryone": "Welcome Mine and Slash - Expansion",
+	"mineandslashexpansion.advancement.desc.version": "1.0.5",
+	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
+	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.models1": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
+	"mineandslashexpansion.advancement.desc.support": "https://discord.gg/YSYMcMb"
+	
+}

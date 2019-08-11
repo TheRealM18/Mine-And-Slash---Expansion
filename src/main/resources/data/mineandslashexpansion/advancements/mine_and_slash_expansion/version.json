@@ -1,0 +1,35 @@
+{
+  "parent": "mmorpg:Mine_And_Slash_Expansion/root",
+  "display": {
+    "icon": {
+      "item": "mmorpg:salvage_station"
+    },
+    "title": {
+      "translate": "mmorpg.advancement.title.version"
+    },
+    "description": {
+      "translate": "mmorpg.advancement.desc.version"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "gained_salvage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:crafting_table"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}
