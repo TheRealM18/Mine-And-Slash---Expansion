@@ -41,7 +41,7 @@ public class SpellSelfSpeed extends BaseSpell {
 
 	@Override
 	public int ManaCost() {
-		return 10;
+		return 40;
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class SpellSelfSpeed extends BaseSpell {
 		try {
 			if(!world.isRemote) {
 				caster.playSound(SoundEvents.ENTITY_GENERIC_DRINK, 1, 1);
-				caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200, 10));
+				caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200, 5));
 			} else {
 				
 			}
@@ -78,40 +78,4 @@ public class SpellSelfSpeed extends BaseSpell {
 	public int useTimeTicks() {
 		return 20;
 	}
-
-//    public void checkZephyrSpeedBoost(PlayerEntity caster, SpellBuffCheck buffable) {
-//
-//        if (buffable.getBuff().equals(SpellBuffType.Zephyr_Speed_Boost)) {
-//            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200));
-//        }
-//
-//    }
-//
-//    public void checkPurityRemoveNegativeEffect(PlayerEntity caster,
-//                                                SpellBuffCheck buffable) {
-//
-//        if (buffable.getBuff().equals(SpellBuffType.Purity_Remove_Negative_Effects)) {
-//            for (EffectInstance pot : new ArrayList<EffectInstance>(caster.getActivePotionEffects())) {
-//                if (pot.getPotion().isBeneficial() == false) {
-//                    caster.removePotionEffect(pot.getPotion());
-//                    break;
-//                }
-//            }
-//        }
-//
-//    }
-//
-//    public void checkAddLightBuff(PlayerEntity caster, SpellBuffCheck buffable) {
-//        if (buffable.getBuff().equals(SpellBuffType.Light_Aoe_Regen)) {
-//            caster.addPotionEffect(new EffectInstance(Effects.SPEED, 200, 10));
-//        }
-//
-//    }
-//
-//    public void checkSpellBuffs(PlayerEntity caster, SpellBuffCheck buffable) {
-//        checkZephyrSpeedBoost(caster, buffable);
-//        checkAddLightBuff(caster, buffable);
-//        checkPurityRemoveNegativeEffect(caster, buffable);
-//    }
-
 }
