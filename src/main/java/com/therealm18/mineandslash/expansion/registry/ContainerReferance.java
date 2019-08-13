@@ -8,5 +8,5 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ContainerReferance {
 	
     @ObjectHolder(BlockReferance.MASTER_CHEST)
-    public static final ContainerType<MasterChestContainer> MASTER_CHEST = null;
+    public static final ContainerType<MasterChestContainer> MASTER_CHEST_CONTAINER = null;
 }

@@ -16,7 +16,7 @@ public class MasterChestInventory implements IItemHandlerModifiable {
     public MasterChestInventory(ItemStack bag, MasterChestContainer.ItemType type) {
         this.bag = bag;
 
-        MasterLootBlockCap.IMasterLootBagData fullInv = bag.getCapability(MasterLootBlockCap.Data)
+        MasterLootBlockCap.IMasterLootChestData fullInv = bag.getCapability(MasterLootBlockCap.Data)
                 .orElse(null);
 
         this.bagInv = new ItemStackHandler(6 * 9);

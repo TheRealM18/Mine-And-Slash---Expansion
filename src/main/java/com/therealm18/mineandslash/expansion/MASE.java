@@ -112,7 +112,7 @@ public class MASE
     	}
     	
         @SubscribeEvent
-    	public static void registerEffects(RegistryEvent.Register<Effect> event) {
+    	public static void register(RegistryEvent.Register<Effect> event) {
 
     	}
     	

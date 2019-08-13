@@ -25,10 +25,10 @@ public class MasterLootBlockCap {
 
     public static final ResourceLocation RESOURCE = new ResourceLocation(Ref.MODID, "block_data");
 
-    @CapabilityInject(IMasterLootBagData.class)
-    public static final Capability<IMasterLootBagData> Data = null;
+    @CapabilityInject(IMasterLootChestData.class)
+    public static final Capability<IMasterLootChestData> Data = null;
 
-    public interface IMasterLootBagData extends ICommonCapability {
+    public interface IMasterLootChestData extends ICommonCapability {
 
         ItemStackHandler getInventory(MasterChestContainer.ItemType type);
 
@@ -46,20 +46,20 @@ public class MasterLootBlockCap {
 
     }
 
-    public static class Provider extends BaseProvider<IMasterLootBagData> {
+    public static class Provider extends BaseProvider<IMasterLootChestData> {
 
         @Override
-        public IMasterLootBagData defaultImpl() {
+        public IMasterLootChestData defaultImpl() {
             return new DefaultImpl();
         }
 
         @Override
-        public Capability<IMasterLootBagData> dataInstance() {
+        public Capability<IMasterLootChestData> dataInstance() {
             return Data;
         }
     }
 
-    public static class DefaultImpl implements IMasterLootBagData {
+    public static class DefaultImpl implements IMasterLootChestData {
 
         HashMap<String, ItemStackHandler> items = new HashMap<>();
 
@@ -121,7 +121,7 @@ public class MasterLootBlockCap {
         }
     }
 
-    public static class Storage extends BaseStorage<IMasterLootBagData> {
+    public static class Storage extends BaseStorage<IMasterLootChestData> {
 
     }
 

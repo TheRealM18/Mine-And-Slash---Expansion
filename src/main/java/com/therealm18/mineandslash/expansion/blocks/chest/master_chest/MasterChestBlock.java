@@ -7,6 +7,7 @@ import com.therealm18.mineandslash.expansion.Ref;
 import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 import com.therealm18.mineandslash.expansion.uncommon.capability.MasterLootBlockCap;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,12 +21,16 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.registries.ObjectHolder;
 
 public class MasterChestBlock  extends BaseInventoryBlock implements IAutoLocName {
 
     public static final String ID = Ref.MODID + ":master_chest";
 	private int size;
 
+    @ObjectHolder(ID)
+    public static final Block BLOCK = null;
+	
     public MasterChestBlock() {
         super(Properties.create(Material.ROCK).hardnessAndResistance(5F));
 
@@ -41,7 +46,7 @@ public class MasterChestBlock  extends BaseInventoryBlock implements IAutoLocNam
     public IItemHandler getInventory(ItemStack bag, ItemStack stack) {
 
         if (stack.getCount() > 0 && filterGroup().anyMatchesFilter(stack)) {
-            MasterLootBlockCap.IMasterLootBagData capa = bag.getCapability(MasterLootBlockCap.Data)
+            MasterLootBlockCap.IMasterLootChestData capa = bag.getCapability(MasterLootBlockCap.Data)
                     .orElse(null);
 
             if (capa != null) {

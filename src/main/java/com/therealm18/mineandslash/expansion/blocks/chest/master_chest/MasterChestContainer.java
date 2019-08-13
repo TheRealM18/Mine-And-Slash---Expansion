@@ -41,7 +41,7 @@ public class MasterChestContainer extends Container {
 
     public MasterChestContainer(int i, PlayerInventory playerInventory, PacketBuffer pkt) {
 
-        this(i, playerInventory, new MasterChestInventory(new ItemStack (BlockReferance.BLOCK_MASTER_CHEST, 1), ItemType.GEAR), ItemType
+        this(i, playerInventory, new MasterChestInventory(new ItemStack (MasterChestBlock.BLOCK, 1), ItemType.GEAR), ItemType
                 .valueOf(pkt.readString()));
 
     }
@@ -51,7 +51,7 @@ public class MasterChestContainer extends Container {
 
     public MasterChestContainer(int num, PlayerInventory playerInv,
                               MasterChestInventory basebag, ItemType type) {
-        super(ContainerReferance.MASTER_CHEST, num);
+        super(ContainerReferance.MASTER_CHEST_CONTAINER, num);
 
         bagHash = basebag.bag.hashCode();
 
