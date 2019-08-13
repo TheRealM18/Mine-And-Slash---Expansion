@@ -1,9 +1,15 @@
 package com.therealm18.mineandslash.expansion;
 
 import net.minecraft.block.Block;
+import net.minecraft.inventory.container.ContainerType;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +25,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestBlock;
+import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestContainer;
+import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestTile;
+import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreative;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeed;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
@@ -29,12 +39,22 @@ import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeed;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfHaste;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfJumpBoost;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfSpeed;
+import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 
 @Mod("mineandslashexpansion")
 @EventBusSubscriber
 public class MASE
 {
     private static final Logger LOGGER = LogManager.getLogger();
+    
+    public static final ItemGroup Blocks = new ItemGroup(Ref.MODID + "_mase_main") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ItemSelfFeatherFalling.ITEM);
+        }
+
+    };
 
     public MASE() {
 
@@ -87,15 +107,30 @@ public class MASE
     		event.getRegistry().register(new ItemSelfFeed());
     		event.getRegistry().register(new ItemSelfJumpBoost());
     		event.getRegistry().register(new ItemSelfFeatherFalling());
+    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.MASTER_CHEST));
     	}
     	
         @SubscribeEvent
-    	public static void register(RegistryEvent.Register<Effect> event) {
+    	public static void registerEffects(RegistryEvent.Register<Effect> event) {
 
     	}
     	
         @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
+        public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+        	event.getRegistry().register(new SalvageStationCreative().setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+        	event.getRegistry().register(new MasterChestBlock().setRegistryName(BlockReferance.MASTER_CHEST));
+        }
+        
+        @SubscribeEvent
+        public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
+//        	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+        	event.getRegistry().register(TileEntityType.Builder.create(MasterChestTile::new, BlockReferance.BLOCK_MASTER_CHEST).build(null).setRegistryName(BlockReferance.MASTER_CHEST));
+        }
+        
+        @SubscribeEvent
+        public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
+        	event.getRegistry().register(IForgeContainerType.create(MasterChestContainer::new).setRegistryName(BlockReferance.MASTER_CHEST));
         }
     }
 }
