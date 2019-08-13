@@ -1,12 +1,12 @@
 modLoader="javafml" #mandatory
-loaderVersion="[28,)" #mandatory (26 is current forge version)
-#issueTrackerURL="http://my.issue.tracker/" #optional
+loaderVersion="[28,]" #mandatory (26 is current forge version)
+issueTrackerURL="https://github.com/TheRealM18/Mine-And-Slash---Expansion/issues" #optional
 [[mods]] #mandatory
 modId="mineandslashexpansion" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Mine & Slash Expansion" #mandatory
-#updateJSONURL="http://myurl.me/" #optional
-displayURL="http://therealm18.com/" #optional
+updateJSONURL="http://myurl.me/" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mine-and-slash-expansion" #optional
 logoFile="examplemod.png" #optional
 credits="The Mine & Slash Team for a great mod" #optional
 authors="TheRealM18" #optional
@@ -34,6 +34,6 @@ This expands the current features of Mine and Slash.
 [[dependencies.mineandslashexpansion]]
     modId="mmorpg"
     mandatory=true
-    versionRange="[2.4.0]"
+    versionRange="[2,]"
     ordering="AFTER"
     side="BOTH"
