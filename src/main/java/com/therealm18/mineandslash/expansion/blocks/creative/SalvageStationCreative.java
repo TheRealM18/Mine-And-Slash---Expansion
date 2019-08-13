@@ -1,7 +1,6 @@
 package com.therealm18.mineandslash.expansion.blocks.creative;
 
 import com.robertx22.mine_and_slash.blocks.bases.BaseInventoryBlock;
-import com.robertx22.mine_and_slash.blocks.salvage_station.TileGearSalvage;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
@@ -18,7 +17,7 @@ public class SalvageStationCreative extends BaseInventoryBlock{
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
 
-        return new TileGearSalvage();
+        return new SalvageStationCreativeTile();
 
     }
 

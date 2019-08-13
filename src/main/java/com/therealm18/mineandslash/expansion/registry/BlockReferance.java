@@ -17,8 +17,8 @@ public class BlockReferance {
     
 
     // NEW BLOCK
-//    @ObjectHolder(GEAR_SALVAGE_CREATIVE)
-//    public static TileEntityType<?> SALVAGE_STATION_CREATIVE;
+    @ObjectHolder(GEAR_SALVAGE_CREATIVE)
+    public static TileEntityType<?> SALVAGE_STATION_CREATIVE;
     @ObjectHolder(GEAR_SALVAGE_CREATIVE)
     public static Block BLOCK_GEAR_SALVAGE_CREATIVE;
     @ObjectHolder(GEAR_SALVAGE_CREATIVE)

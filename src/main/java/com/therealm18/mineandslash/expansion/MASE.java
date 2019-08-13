@@ -26,9 +26,9 @@ import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestBlock;
-import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestContainer;
 import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestTile;
 import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreative;
+import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreativeTile;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeed;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
@@ -124,13 +124,12 @@ public class MASE
         
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
-//        	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+        	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
         	event.getRegistry().register(TileEntityType.Builder.create(MasterChestTile::new, BlockReferance.BLOCK_MASTER_CHEST).build(null).setRegistryName(BlockReferance.MASTER_CHEST));
         }
         
         @SubscribeEvent
         public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
-        	event.getRegistry().register(IForgeContainerType.create(MasterChestContainer::new).setRegistryName(BlockReferance.MASTER_CHEST));
         }
     }
 }
