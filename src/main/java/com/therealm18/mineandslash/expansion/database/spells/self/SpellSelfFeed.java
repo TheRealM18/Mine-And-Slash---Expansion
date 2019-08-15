@@ -21,7 +21,7 @@ public class SpellSelfFeed extends BaseSpell {
 
 	@Override
 	public int BaseValue() {
-		return 300;
+		return 200;
 	}
 
 	@Override

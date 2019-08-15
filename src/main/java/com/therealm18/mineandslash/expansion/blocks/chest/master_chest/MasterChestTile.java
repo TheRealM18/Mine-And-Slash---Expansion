@@ -12,6 +12,7 @@ import com.robertx22.mine_and_slash.uncommon.interfaces.IAutoLocName;
 import com.robertx22.mine_and_slash.uncommon.item_filters.bases.ItemFilterGroup;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.Ref;
+import com.therealm18.mineandslash.expansion.blocks.TileEntityTypes;
 import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +23,7 @@ import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.ChestTileEntity;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
@@ -31,13 +33,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.items.IItemHandler;
 
-public class MasterChestTile extends ChestTileEntity implements IAutoLocName {
+public class MasterChestTile extends TileEntity implements IAutoLocName {
 
     public static final String ID = Ref.MODID + ":master_chest";
     public int size = 9 * 6;
 
     public MasterChestTile() {
-        super();
+        super(TileEntityTypes.MASTER_CHEST);
 
         this.size  *= ContainerMasterBag.ItemType.values().length;
 

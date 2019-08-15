@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,15 +28,21 @@ import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChe
 import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestTile;
 import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreative;
 import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreativeTile;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfBreath;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeed;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFirePro;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfHaste;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfJumpBoost;
+import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfNightVision;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfBreath;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeed;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFirePro;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfHaste;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfJumpBoost;
+import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfNightVision;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfSpeed;
 import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 
@@ -90,6 +95,9 @@ public class MASE
         MineAndSlashAPI.addSpell(new SpellSelfJumpBoost());
         MineAndSlashAPI.addSpell(new SpellSelfSpeed());
         MineAndSlashAPI.addSpell(new SpellSelfFeatherFalling());
+        MineAndSlashAPI.addSpell(new SpellSelfNightVision());
+        MineAndSlashAPI.addSpell(new SpellSelfBreath());
+        MineAndSlashAPI.addSpell(new SpellSelfFirePro());
     }
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
@@ -107,6 +115,9 @@ public class MASE
     		event.getRegistry().register(new ItemSelfFeed());
     		event.getRegistry().register(new ItemSelfJumpBoost());
     		event.getRegistry().register(new ItemSelfFeatherFalling());
+    		event.getRegistry().register(new ItemSelfNightVision());
+    		event.getRegistry().register(new ItemSelfBreath());
+    		event.getRegistry().register(new ItemSelfFirePro());
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.MASTER_CHEST));
     	}
@@ -125,7 +136,7 @@ public class MASE
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
         	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
-        	event.getRegistry().register(TileEntityType.Builder.create(MasterChestTile::new, BlockReferance.BLOCK_MASTER_CHEST).build(null).setRegistryName(BlockReferance.MASTER_CHEST));
+//        	event.getRegistry().register(TileEntityType.Builder.create(MasterChestTile::new, BlockReferance.BLOCK_MASTER_CHEST).build(null).setRegistryName(BlockReferance.MASTER_CHEST));
         }
         
         @SubscribeEvent
