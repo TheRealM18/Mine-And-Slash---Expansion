@@ -5,6 +5,9 @@
 	"item.mineandslashexpansion.spell_selfjump": "Jump Higher",
 	"item.mineandslashexpansion.spell_selfspeed": "Go Farther",
 	"item.mineandslashexpansion.spell_selffeather": "Fall softer",
+	"item.mineandslashexpansion.spell_selfnightvision": "All eyes",
+	"item.mineandslashexpansion.spell_selfbreath": "All Breathing",
+	"item.mineandslashexpansion.spell_selffireprotection": "All Fire Protection",
 	
 	
 	"mmorpg.stat.speed": "Movement",
@@ -12,6 +15,9 @@
 	"mmorpg.stat.haste": "Mining speed",
 	"mmorpg.stat.jumpboost": "Jumping",
 	"mmorpg.stat.featherfall": "Falling",
+	"mmorpg.stat.nightvision": "All Seeing",
+	"mmorpg.stat.breath": "Breathing",
+	"mmorpg.stat.fireprotection": "All Fire",
 	
 	
 	"mmorpg.tooltip.spell_self_speed": "Cast this spell to yourself",
@@ -19,6 +25,9 @@
 	"mmorpg.tooltip.spell_self_haste": "Cast this spell to yourself",
 	"mmorpg.tooltip.spell_self_jump": "Cast this spell to yourself",
 	"mmorpg.tooltip.spell_self_featherfall": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_nightvision": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_breath": "Cast this spell to yourself",
+	"mmorpg.tooltip.spell_self_fireprotection": "Cast this spell to yourself",
 	
 	
 	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - Information",
@@ -30,12 +39,14 @@
 	"mineandslashexpansion.advancement.title.models1": "Modeler",
 	"mineandslashexpansion.advancement.title.codersroot": "Coders",
 	"mineandslashexpansion.advancement.title.coder1": "Coder",
+	"mineandslashexpansion.advancement.title.translatorsroot": "Translators",
+	"mineandslashexpansion.advancement.title.translators1": "Translator",
 	"mineandslashexpansion.advancement.title.support": "Discord For help",
 	
 	
 	
 	"mineandslashexpansion.advancement.desc.welcomeeveryone": "Welcome Mine and Slash - Expansion",
-	"mineandslashexpansion.advancement.desc.version": "1.1.7",
+	"mineandslashexpansion.advancement.desc.version": "1.1.4.9",
 	"mineandslashexpansion.advancement.desc.artistsroot": "This are the artist that help out every day",
 	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
 	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
@@ -43,6 +54,8 @@
 	"mineandslashexpansion.advancement.desc.models1": "DreadMagusX1",
 	"mineandslashexpansion.advancement.desc.codersroot": "This are the developers of the mod",
 	"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
+	"mineandslashexpansion.advancement.desc.translatorsroot": "This are the translators of the mod",
+	"mineandslashexpansion.advancement.desc.translators1": "yuwanjun564",
 	"mineandslashexpansion.advancement.desc.support": "YSYMcMb"
 	
 }
