@@ -16,7 +16,7 @@ This expands the current features of Mine and Slash.
 [[dependencies.mineandslashexpansion]]
     modId="forge"
     mandatory=true
-    versionRange="[28,]"
+    versionRange="[28.0.45,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.mineandslashexpansion]]
