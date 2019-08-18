@@ -6,9 +6,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTier;
 import net.minecraft.potion.Effect;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,6 +38,10 @@ import com.therealm18.mineandslash.expansion.database.items.spell_items.self.Ite
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfJumpBoost;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfNightVision;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
+import com.therealm18.mineandslash.expansion.database.items.tools.Axe;
+import com.therealm18.mineandslash.expansion.database.items.tools.Hoe;
+import com.therealm18.mineandslash.expansion.database.items.tools.Pickaxe;
+import com.therealm18.mineandslash.expansion.database.items.tools.Shovel;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfBreath;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFeed;
@@ -110,6 +116,7 @@ public class MASE
     	@SubscribeEvent
     	public static void registerItems(RegistryEvent.Register<Item> event) {
 
+    		//Spells
     		event.getRegistry().register(new ItemSelfHaste());
     		event.getRegistry().register(new ItemSelfSpeed());
     		event.getRegistry().register(new ItemSelfFeed());
@@ -118,8 +125,42 @@ public class MASE
     		event.getRegistry().register(new ItemSelfNightVision());
     		event.getRegistry().register(new ItemSelfBreath());
     		event.getRegistry().register(new ItemSelfFirePro());
+    		
+    		//Blocks
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(MASE.Blocks)).setRegistryName(BlockReferance.MASTER_CHEST));
+    		
+    		//Tools
+    		event.getRegistry().register(new Pickaxe(ItemTier.WOOD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonpickaxe"));
+    		event.getRegistry().register(new Pickaxe(ItemTier.GOLD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("ncommonpickaxe"));
+    		event.getRegistry().register(new Pickaxe(ItemTier.STONE, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("rarepickaxe"));
+    		event.getRegistry().register(new Pickaxe(ItemTier.IRON, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epicpickaxe"));
+    		event.getRegistry().register(new Pickaxe(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendarypickaxe"));
+    		event.getRegistry().register(new Pickaxe(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalpickaxe"));
+    		
+
+    		event.getRegistry().register(new Axe(ItemTier.WOOD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("commonaxe"));
+    		event.getRegistry().register(new Axe(ItemTier.GOLD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("ncommonaxe"));
+    		event.getRegistry().register(new Axe(ItemTier.STONE, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("rareaxe"));
+    		event.getRegistry().register(new Axe(ItemTier.IRON, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("epicaxe"));
+    		event.getRegistry().register(new Axe(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("legendaryaxe"));
+    		event.getRegistry().register(new Axe(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("mythicalaxe"));
+    		
+
+    		event.getRegistry().register(new Hoe(ItemTier.WOOD, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonhoe"));
+    		event.getRegistry().register(new Hoe(ItemTier.GOLD, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("ncommonhe"));
+    		event.getRegistry().register(new Hoe(ItemTier.STONE, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("rarehoe"));
+    		event.getRegistry().register(new Hoe(ItemTier.IRON, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epichoe"));
+    		event.getRegistry().register(new Hoe(ItemTier.DIAMOND, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendaryhoe"));
+    		event.getRegistry().register(new Hoe(ItemTier.DIAMOND, 1, new Item.Properties().group(Blocks).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalhoe"));
+    		
+
+    		event.getRegistry().register(new Shovel(ItemTier.WOOD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("commonshovel"));
+    		event.getRegistry().register(new Shovel(ItemTier.GOLD, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("ncommonshovel"));
+    		event.getRegistry().register(new Shovel(ItemTier.STONE, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("rareshovel"));
+    		event.getRegistry().register(new Shovel(ItemTier.IRON, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicshovel"));
+    		event.getRegistry().register(new Shovel(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendarshovel"));
+    		event.getRegistry().register(new Shovel(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Blocks).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalshovel"));
     	}
     	
         @SubscribeEvent
