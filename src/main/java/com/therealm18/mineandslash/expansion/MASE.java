@@ -190,7 +190,7 @@ public class MASE
     		event.getRegistry().register(new Excavator(ItemTier.STONE, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("rareexcavator"));
     		event.getRegistry().register(new Excavator(ItemTier.IRON, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicexcavator"));
     		event.getRegistry().register(new Excavator(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryexcavator"));
-    		event.getRegistry().register(new Excavator(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavatorr"));
+    		event.getRegistry().register(new Excavator(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavator"));
     	}
     	
         @SubscribeEvent
