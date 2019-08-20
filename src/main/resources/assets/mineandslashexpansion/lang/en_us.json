@@ -42,6 +42,22 @@
 	"item.mineandslashexpansion.mythicalaxe": "Mythical Axe",
 	
 	
+	"item.mineandslashexpansion.commonhammer": "Common Hammer",
+	"item.mineandslashexpansion.uncommonhammer": "Unommon Hammer",
+	"item.mineandslashexpansion.rarehammer": "Rare Hammer",
+	"item.mineandslashexpansion.epichammer": "Epic Hammer",
+	"item.mineandslashexpansion.legendaryhammer": "Legendary Hammer",
+	"item.mineandslashexpansion.mythicalhammer": "Mythical Hammer",
+	
+	
+	"item.mineandslashexpansion.commonexcavator": "Common Excavator",
+	"item.mineandslashexpansion.uncommonexcavator": "Unommon Excavator",
+	"item.mineandslashexpansion.rareexcavator": "Rare Excavator",
+	"item.mineandslashexpansion.epicexcavator": "Epic Excavator",
+	"item.mineandslashexpansion.legendaryexcavator": "Legendary Excavator",
+	"item.mineandslashexpansion.mythicalexcavator": "Mythical Excavator",
+	
+	
 	"mmorpg.stat.speed": "Movement",
 	"mmorpg.stat.feed": "Feeds you",
 	"mmorpg.stat.haste": "Mining speed",

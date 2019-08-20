@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XsX",
+    "xex",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mmorpg:ore2"
+    },
+    "e": {
+      "item": "mineandslashexpansion:uncommonexcavator"
+    },
+    "s": {
+      "item": "mineandslashexpansion:rareshovel"
+    }
+  },
+  "result": {
+    "item": "mineandslashexpansion:rareexcavator"
+  }
+}

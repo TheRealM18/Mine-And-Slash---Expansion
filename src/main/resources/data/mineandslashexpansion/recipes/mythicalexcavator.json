@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XsX",
+    "xex",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mmorpg:ore5"
+    },
+    "e": {
+      "item": "mineandslashexpansion:legendaryexcavator"
+    },
+    "s": {
+      "item": "mineandslashexpansion:mythicalshovel"
+    }
+  },
+  "result": {
+    "item": "mineandslashexpansion:mythicalexcavator"
+  }
+}

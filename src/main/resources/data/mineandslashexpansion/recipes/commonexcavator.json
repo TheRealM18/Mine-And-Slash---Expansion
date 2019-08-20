@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xsX",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mmorpg:ore0"
+    },
+    "s": {
+      "item": "mineandslashexpansion:commonshovel"
+    }
+  },
+  "result": {
+    "item": "mineandslashexpansion:commonexcavator"
+  }
+}

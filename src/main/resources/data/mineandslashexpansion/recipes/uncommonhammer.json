@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XpX",
+    "xhx",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mmorpg:ore1"
+    },
+    "h": {
+      "item": "mineandslashexpansion:commonhammer"
+    },
+    "p": {
+      "item": "mineandslashexpansion:uncommonpickaxe"
+    }
+  },
+  "result": {
+    "item": "mineandslashexpansion:uncommonhammer"
+  }
+}
