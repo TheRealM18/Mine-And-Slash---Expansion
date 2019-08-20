@@ -26,6 +26,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.robertx22.mine_and_slash.mmorpg.registers.common.ItemRegister;
+import com.robertx22.mine_and_slash.mmorpg.registers.common.OreGenRegister;
+import com.robertx22.mine_and_slash.uncommon.utilityclasses.RegisterItemUtils;
 import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestBlock;
 import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestTile;
 import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreative;
@@ -39,6 +42,8 @@ import com.therealm18.mineandslash.expansion.database.items.spell_items.self.Ite
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfNightVision;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
 import com.therealm18.mineandslash.expansion.database.items.tools.Axe;
+import com.therealm18.mineandslash.expansion.database.items.tools.Excavator;
+import com.therealm18.mineandslash.expansion.database.items.tools.Hammer;
 import com.therealm18.mineandslash.expansion.database.items.tools.Hoe;
 import com.therealm18.mineandslash.expansion.database.items.tools.Pickaxe;
 import com.therealm18.mineandslash.expansion.database.items.tools.Shovel;
@@ -170,6 +175,22 @@ public class MASE
     		event.getRegistry().register(new Shovel(ItemTier.IRON, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicshovel"));
     		event.getRegistry().register(new Shovel(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryshovel"));
     		event.getRegistry().register(new Shovel(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalshovel"));
+
+    		
+    		event.getRegistry().register(new Hammer(ItemTier.WOOD, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonhammer"));
+    		event.getRegistry().register(new Hammer(ItemTier.GOLD, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("uncommonhammer"));
+    		event.getRegistry().register(new Hammer(ItemTier.STONE, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("rarehammer"));
+    		event.getRegistry().register(new Hammer(ItemTier.IRON, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epichammer"));
+    		event.getRegistry().register(new Hammer(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendaryhammer"));
+    		event.getRegistry().register(new Hammer(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalhammer"));
+    		
+    		
+    		event.getRegistry().register(new Excavator(ItemTier.WOOD, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("commonexcavator"));
+    		event.getRegistry().register(new Excavator(ItemTier.GOLD, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("uncommonexcavator"));
+    		event.getRegistry().register(new Excavator(ItemTier.STONE, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("rareexcavator"));
+    		event.getRegistry().register(new Excavator(ItemTier.IRON, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicexcavator"));
+    		event.getRegistry().register(new Excavator(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryexcavator"));
+    		event.getRegistry().register(new Excavator(ItemTier.DIAMOND, 1, 1F, new Item.Properties().group(DNU).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavatorr"));
     	}
     	
         @SubscribeEvent
