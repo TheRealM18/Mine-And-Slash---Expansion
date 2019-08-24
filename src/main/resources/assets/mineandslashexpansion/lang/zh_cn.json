@@ -1,62 +1,110 @@
 {
 
-"item.mineandslashexpansion.spell_selffeed": "饱腹",
-"item.mineandslashexpansion.spell_selfhaste": "急促",
-"item.mineandslashexpansion.spell_selfjump": "跳跃提升",
-"item.mineandslashexpansion.spell_selfspeed": "迅疾",
-"item.mineandslashexpansion.spell_selffeather": "羽落",
-"item.mineandslashexpansion.spell_selfnightvision": "全体夜视",
-"item.mineandslashexpansion.spell_selfbreath": "全体水肺",
-"item.mineandslashexpansion.spell_selffireprotection": "全体火焰保护",
+	"item.mineandslashexpansion.spell_selffeed": "饱腹",
+	"item.mineandslashexpansion.spell_selfhaste": "急促",
+	"item.mineandslashexpansion.spell_selfjump": "跳跃提升",
+	"item.mineandslashexpansion.spell_selfspeed": "迅疾",
+	"item.mineandslashexpansion.spell_selffeather": "羽落",
+	"item.mineandslashexpansion.spell_selfnightvision": "全体夜视",
+	"item.mineandslashexpansion.spell_selfbreath": "全体水肺",
+	"item.mineandslashexpansion.spell_selffireprotection": "全体火焰保护",
+
+	
+	"item.mineandslashexpansion.commonhoe": "普通 锄头",
+	"item.mineandslashexpansion.uncommonhoe": "罕见 锄头",
+	"item.mineandslashexpansion.rarehoe": "稀有 锄头",
+	"item.mineandslashexpansion.epichoe": "史诗 锄头",
+	"item.mineandslashexpansion.legendaryhoe": "传说 锄头",
+	"item.mineandslashexpansion.mythicalhoe": "神话 锄头",
+	
+	
+	"item.mineandslashexpansion.commonshovel": "普通 铲子",
+	"item.mineandslashexpansion.uncommonshovel": "罕见 铲子",
+	"item.mineandslashexpansion.rareshovel": "稀有 铲子",
+	"item.mineandslashexpansion.epicshovel": "史诗 铲子",
+	"item.mineandslashexpansion.legendaryshovel": "传说 铲子",
+	"item.mineandslashexpansion.mythicalshovel": "神话 铲子",
+	
+	
+	"item.mineandslashexpansion.commonpickaxe": "普通 镐子",
+	"item.mineandslashexpansion.uncommonpickaxe": "罕见 镐子",
+	"item.mineandslashexpansion.rarepickaxe": "稀有 镐子",
+	"item.mineandslashexpansion.epicpickaxe": "史诗 镐子",
+	"item.mineandslashexpansion.legendarypickaxe": "传说 镐子",
+	"item.mineandslashexpansion.mythicalpickaxe": "神话 镐子",
+	
+	
+	"item.mineandslashexpansion.commonaxe": "普通 斧子",
+	"item.mineandslashexpansion.uncommonaxe": "罕见 斧子",
+	"item.mineandslashexpansion.rareaxe": "稀有 斧子",
+	"item.mineandslashexpansion.epicaxe": "史诗 斧子",
+	"item.mineandslashexpansion.legendaryaxe": "传说 斧子",
+	"item.mineandslashexpansion.mythicalaxe": "神话 斧子",
+	
+	
+	"item.mineandslashexpansion.commonhammer": "普通 锤子",
+	"item.mineandslashexpansion.uncommonhammer": "罕见 锤子",
+	"item.mineandslashexpansion.rarehammer": "稀有 锤子",
+	"item.mineandslashexpansion.epichammer": "史诗 锤子",
+	"item.mineandslashexpansion.legendaryhammer": "传说 锤子",
+	"item.mineandslashexpansion.mythicalhammer": "神话 锤子",
+	
+	
+	"item.mineandslashexpansion.commonexcavator": "普通 挖掘器",
+	"item.mineandslashexpansion.uncommonexcavator": "罕见 挖掘器",
+	"item.mineandslashexpansion.rareexcavator": "稀有 挖掘器",
+	"item.mineandslashexpansion.epicexcavator": "史诗 挖掘器",
+	"item.mineandslashexpansion.legendaryexcavator": "传说 挖掘器",
+	"item.mineandslashexpansion.mythicalexcavator": "神话 挖掘器",
+	
+	
+	"mmorpg.stat.speed": "移动",
+	"mmorpg.stat.feed": "饱腹",
+	"mmorpg.stat.haste": "急促",
+	"mmorpg.stat.jumpboost": "跳跃",
+	"mmorpg.stat.featherfall": "羽落",
+	"mmorpg.stat.nightvision": "夜视",
+	"mmorpg.stat.breath": "水肺",
+	"mmorpg.stat.fireprotection": "火焰保护",
 
 
-"mmorpg.stat.speed": "移动",
-"mmorpg.stat.feed": "饱腹",
-"mmorpg.stat.haste": "急促",
-"mmorpg.stat.jumpboost": "跳跃",
-"mmorpg.stat.featherfall": "羽落",
-"mmorpg.stat.nightvision": "夜视",
-"mmorpg.stat.breath": "水肺",
-"mmorpg.stat.fireprotection": "火焰保护",
+	"mmorpg.tooltip.spell_self_speed": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_feed": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_haste": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_jump": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_featherfall": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_nightvision": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_breath": "释放咒语于己身",
+	"mmorpg.tooltip.spell_self_fireprotection": "释放咒语于己身",
 
 
-"mmorpg.tooltip.spell_self_speed": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_feed": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_haste": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_jump": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_featherfall": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_nightvision": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_breath": "释放咒语于己身",
-"mmorpg.tooltip.spell_self_fireprotection": "释放咒语于己身",
-
-
-"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - 信息",
-"mineandslashexpansion.advancement.title.version": "Mod 版本",
-"mineandslashexpansion.advancement.title.artistsroot": "作者",
-"mineandslashexpansion.advancement.title.artist1": "作者",
-"mineandslashexpansion.advancement.title.artist2": "作者",
-"mineandslashexpansion.advancement.title.modelersroot": "建模师",
-"mineandslashexpansion.advancement.title.models1": "建模",
-"mineandslashexpansion.advancement.title.codersroot": "编程器",
-"mineandslashexpansion.advancement.title.coder1": "编程器",",
-"mineandslashexpansion.advancement.title.models1": "建模",
-"mineandslashexpansion.advancement.title.translatorsroot": "翻译者们",
-"mineandslashexpansion.advancement.title.translator1": "翻译者",
-"mineandslashexpansion.advancement.title.support": "去Discord寻求帮助",
+	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - 信息",
+	"mineandslashexpansion.advancement.title.version": "Mod 版本",
+	"mineandslashexpansion.advancement.title.artistsroot": "作者",
+	"mineandslashexpansion.advancement.title.artist1": "作者",
+	"mineandslashexpansion.advancement.title.artist2": "作者",
+	"mineandslashexpansion.advancement.title.modelersroot": "建模师",
+	"mineandslashexpansion.advancement.title.models1": "建模",
+	"mineandslashexpansion.advancement.title.codersroot": "编程器",
+	"mineandslashexpansion.advancement.title.coder1": "编程器",",
+	"mineandslashexpansion.advancement.title.models1": "建模",
+	"mineandslashexpansion.advancement.title.translatorsroot": "翻译者们",
+	"mineandslashexpansion.advancement.title.translator1": "翻译者",
+	"mineandslashexpansion.advancement.title.support": "去Discord寻求帮助",
 
 
 
-"mineandslashexpansion.advancement.desc.welcomeeveryone": "欢迎游玩 Mine and Slash - Expansion",
-"mineandslashexpansion.advancement.desc.version": "1.1.4.9",
-"mineandslashexpansion.advancement.desc.artistsroot": "这些是帮助过作者的人",
-"mineandslashexpansion.advancement.desc.artist1": "Pojy",
-"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
-"mineandslashexpansion.advancement.desc.modelersroot": "这些是建模师",
-"mineandslashexpansion.advancement.desc.models1": "DreadMagusX1",
-"mineandslashexpansion.advancement.desc.codersroot": "这是mod的开发者",
-"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
-"mineandslashexpansion.advancement.desc.support": "YSYMcMb"
-"mineandslashexpansion.advancement.desc.translatorsroot"": "这是mod的翻译者",
-"mineandslashexpansion.advancement.desc.translator1": "yuwanjun564"
+	"mineandslashexpansion.advancement.desc.welcomeeveryone": "欢迎游玩 Mine and Slash - Expansion",
+	"mineandslashexpansion.advancement.desc.version": "1.2.4.15",
+	"mineandslashexpansion.advancement.desc.artistsroot": "这些是帮助过作者的人",
+	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
+	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.modelersroot": "这些是建模师",
+	"mineandslashexpansion.advancement.desc.models1": "DreadMagusX1",
+	"mineandslashexpansion.advancement.desc.codersroot": "这是mod的开发者",
+	"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
+	"mineandslashexpansion.advancement.desc.support": "YSYMcMb"
+	"mineandslashexpansion.advancement.desc.translatorsroot"": "这是mod的翻译者",
+	"mineandslashexpansion.advancement.desc.translator1": "yuwanjun564"
 
 }
