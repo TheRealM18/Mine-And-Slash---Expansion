@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.blocks.chest.master_chest;
+package com.therealm18.mineandslash.expansion.database.blocks.chest.master_chest;
 
 import com.therealm18.mineandslash.expansion.Ref;
 

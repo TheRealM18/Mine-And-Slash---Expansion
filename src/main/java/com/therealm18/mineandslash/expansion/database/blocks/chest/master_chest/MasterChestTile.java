@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.blocks.chest.master_chest;
+package com.therealm18.mineandslash.expansion.database.blocks.chest.master_chest;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -12,7 +12,7 @@ import com.robertx22.mine_and_slash.uncommon.interfaces.IAutoLocName;
 import com.robertx22.mine_and_slash.uncommon.item_filters.bases.ItemFilterGroup;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.Ref;
-import com.therealm18.mineandslash.expansion.blocks.TileEntityTypes;
+import com.therealm18.mineandslash.expansion.database.blocks.TileEntityTypes;
 import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 
 import net.minecraft.entity.player.PlayerEntity;
@@ -39,7 +39,7 @@ public class MasterChestTile extends TileEntity implements IAutoLocName {
     public int size = 9 * 6;
 
     public MasterChestTile() {
-        super(TileEntityTypes.MASTER_CHEST);
+        super(BlockReferance.TILE_MASTER_CHEST);
 
         this.size  *= ContainerMasterBag.ItemType.values().length;
 

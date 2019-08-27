@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mmorpg:ore3"
+  },
+  "result": "mineandslashexpansion:epicingot",
+  "experience": 0.15,
+  "cookingtime": 1600
+}

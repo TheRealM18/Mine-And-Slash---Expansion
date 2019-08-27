@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.blocks.creative;
+package com.therealm18.mineandslash.expansion.database.blocks.creative;
 
 import com.therealm18.mineandslash.expansion.Ref;
 

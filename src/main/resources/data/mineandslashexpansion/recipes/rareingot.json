@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mmorpg:ore2"
+  },
+  "result": "mineandslashexpansion:rareingot",
+  "experience": 0.15,
+  "cookingtime": 1600
+}

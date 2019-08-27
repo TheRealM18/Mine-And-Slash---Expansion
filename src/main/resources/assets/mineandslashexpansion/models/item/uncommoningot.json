@@ -1,0 +1,6 @@
+{
+    "parent": "item/generic",
+    "textures": {
+        "layer0": "mineandslashexpansion:items/ingedents/ingot/common"
+    }
+}

@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.blocks.chest;
+package com.therealm18.mineandslash.expansion.database.blocks.chest;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.blocks.chest.master_chest;
+package com.therealm18.mineandslash.expansion.database.blocks.chest.master_chest;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

@@ -1,6 +1,10 @@
 package com.therealm18.mineandslash.expansion;
 
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantment.Rarity;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -25,10 +29,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
-import com.therealm18.mineandslash.expansion.blocks.chest.master_chest.MasterChestBlock;
-import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreative;
-import com.therealm18.mineandslash.expansion.blocks.creative.SalvageStationCreativeTile;
+import com.therealm18.mineandslash.expansion.database.blocks.chest.master_chest.MasterChestBlock;
+import com.therealm18.mineandslash.expansion.database.blocks.creative.SalvageStationCreative;
+import com.therealm18.mineandslash.expansion.database.blocks.creative.SalvageStationCreativeTile;
 import com.therealm18.mineandslash.expansion.database.items.ToolTier;
+import com.therealm18.mineandslash.expansion.database.items.books.enchantments.LootBonusEnchantment;
+import com.therealm18.mineandslash.expansion.database.items.ores.Ingot;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfBreath;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeatherFalling;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFeed;
@@ -57,7 +63,7 @@ import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 @EventBusSubscriber
 public class MASE
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public static final ItemGroup DNU = new ItemGroup(Ref.MODID + "_dnu") {
 
@@ -76,11 +82,20 @@ public class MASE
         }
 
     };
+    
+    public static final ItemGroup Ingrediants = new ItemGroup(Ref.MODID + "_ingedients") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ItemSelfFeed.ITEM);
+        }
+
+    };
 
     public MASE() {
 
         System.out.println("Starting Mine and Slash - Expansion");
-        
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
@@ -94,11 +109,10 @@ public class MASE
     
     private void setup(final FMLCommonSetupEvent event)
     {
-    	
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-    }
+  }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
@@ -139,6 +153,7 @@ public class MASE
     		//Blocks
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
     		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.MASTER_CHEST));
+    		
     		
     		//Tools
     		event.getRegistry().register(new Pickaxe(ToolTier.COMMON, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonpickaxe"));
@@ -187,6 +202,33 @@ public class MASE
     		event.getRegistry().register(new Excavator(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavator"));
+    		
+    		
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoningot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoningot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rareingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalingot"));
+    		
+    		
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commonmixedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommonmixedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("raremixedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicmixedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarymixedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalmixedingot"));
+    		
+    		
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoncompressedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoncompressedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rarecompressedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epiccompressedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarycompressedingot"));
+    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalcompressedingot"));
+    		
+    		
+    		//Enchantments
     	}
     	
         @SubscribeEvent
@@ -208,6 +250,14 @@ public class MASE
         
         @SubscribeEvent
         public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
+
+        }
+        
+        @SubscribeEvent
+        public static void registerEnchantments(final RegistryEvent.Register<Enchantment> event) {
+        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.DIGGER, EquipmentSlotType.MAINHAND).setRegistryName("fortune"));
+        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.FISHING_ROD, EquipmentSlotType.MAINHAND).setRegistryName("luck_of_the_sea"));
+        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.WEAPON, EquipmentSlotType.MAINHAND).setRegistryName("looting"));
         }
     }
 }

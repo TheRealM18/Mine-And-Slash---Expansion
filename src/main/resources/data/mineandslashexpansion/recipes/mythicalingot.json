@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5",
+    "item": "mmorpg:ore5"
+  },
+  "result": "mineandslashexpansion:mythicalingot",
+  "experience": 0.15,
+  "cookingtime": 1600
+}

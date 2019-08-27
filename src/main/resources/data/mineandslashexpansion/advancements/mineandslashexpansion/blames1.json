@@ -1,0 +1,25 @@
+{
+	"parent": "mineandslashexpansion:mineandslashexpansion/blamesroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:mythicalingot"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.blames1"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.blame1"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

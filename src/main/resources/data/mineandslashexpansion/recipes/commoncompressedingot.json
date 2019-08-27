@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mineandslashexpansion:commonmixedingot"
+  },
+  "result": "mineandslashexpansion:commoncompressedingot",
+  "experience": 0.15,
+  "cookingtime": 3200
+}

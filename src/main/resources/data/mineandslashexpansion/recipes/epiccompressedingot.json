@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mineandslashexpansion:epicmixedingot"
+  },
+  "result": "mineandslashexpansion:epiccompressedingot",
+  "experience": 0.15,
+  "cookingtime": 3200
+}

@@ -21,7 +21,7 @@ public enum ToolTier implements IItemTier {
    EPIC(3, 1024, 16.0F, 8.0F, 30, () -> {
 	      return Ingredient.fromItems(Blocks.AIR);
 	   }),
-   LEGENDARY(4, 3048, 20.0F, 16.0F, 30, () -> {
+   LEGENDARY(4, 2048, 20.0F, 16.0F, 30, () -> {
 	      return Ingredient.fromItems(Blocks.AIR);
 	   }),
    MYTHICAL(5, 4096, 24.0F, 32.0F, 30, () -> {

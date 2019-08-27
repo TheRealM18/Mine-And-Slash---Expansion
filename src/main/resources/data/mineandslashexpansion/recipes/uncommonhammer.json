@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XpX",
-    "XhX",
+    "XXX",
+    "X#X",
     " # "
   ],
   "key": {
@@ -10,13 +10,7 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "mmorpg:ore1"
-    },
-    "h": {
-      "item": "mineandslashexpansion:commonhammer"
-    },
-    "p": {
-      "item": "mineandslashexpansion:uncommonpickaxe"
+      "item": "mineandslashexpansion:uncommoncompressedingot"
     }
   },
   "result": {

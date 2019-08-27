@@ -18,7 +18,6 @@ public class ConfigurateTools {
 
         public Common(ForgeConfigSpec.Builder builder) {
 
-            builder.comment(" Practical Tools config \n These multipliers affect the amount of damage tools take per use.").push("common");
             hammerDuraLossMulti = builder.defineInRange("HammerDuraLossMulti", 2, 1, Integer.MAX_VALUE);
             excavatorDuraLossMulti = builder.defineInRange("ExcavatorDuraLossMulti", 2, 1, Integer.MAX_VALUE);
             builder.pop();

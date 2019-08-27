@@ -58,6 +58,30 @@
 	"item.mineandslashexpansion.mythicalexcavator": "神话 挖掘器",
 	
 	
+	"item.mineandslashexpansion.commoningot": "Common Ingot",
+	"item.mineandslashexpansion.uncommoningot": "Uncommon Ingot",
+	"item.mineandslashexpansion.rareingot": "Rare Ingot",
+	"item.mineandslashexpansion.epicingot": "Epic Ingot",
+	"item.mineandslashexpansion.legendaryingot": "Legendary Ingot",
+	"item.mineandslashexpansion.mythicalingot": "Mythical Ingot",
+	
+	
+	"item.mineandslashexpansion.commonmixedingot": "Common Mixed Ingot",
+	"item.mineandslashexpansion.uncommonmixedingot": "Uncommon Mixed Ingot",
+	"item.mineandslashexpansion.raremixedingot": "Rare Mixed Ingot",
+	"item.mineandslashexpansion.epicmixedingot": "Epic Mixed Ingot",
+	"item.mineandslashexpansion.legendarymixedingot": "Legendary Mixed Ingot",
+	"item.mineandslashexpansion.mythicalmixedingot": "Mythical Mixed Ingot",
+	
+	
+	"item.mineandslashexpansion.commoncompressedingot": "Common Compressed Ingot",
+	"item.mineandslashexpansion.uncommoncompressedingot": "Uncommon Compressed Ingot",
+	"item.mineandslashexpansion.rarecompressedingot": "Rare Compressed Ingot",
+	"item.mineandslashexpansion.epiccompressedingot": "Epic Compressed Ingot",
+	"item.mineandslashexpansion.legendarycompressedingot": "Legendary Compressed Ingot",
+	"item.mineandslashexpansion.mythicalcompressedingot": "Mythical Compressed Ingot",
+	
+	
 	"mmorpg.stat.speed": "移动",
 	"mmorpg.stat.feed": "饱腹",
 	"mmorpg.stat.haste": "急促",
@@ -76,6 +100,11 @@
 	"mmorpg.tooltip.spell_self_nightvision": "释放咒语于己身",
 	"mmorpg.tooltip.spell_self_breath": "释放咒语于己身",
 	"mmorpg.tooltip.spell_self_fireprotection": "释放咒语于己身",
+	
+	
+	"enchantment.mineandslashexpansion.luck_of_the_sea": "MASE Luck of the Sea",
+	"enchantment.mineandslashexpansion.looting": "MASE Looting",
+	"enchantment.mineandslashexpansion.fortune": "MASE Fortune",
 
 
 	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - 信息",
@@ -91,11 +120,13 @@
 	"mineandslashexpansion.advancement.title.translatorsroot": "翻译者们",
 	"mineandslashexpansion.advancement.title.translator1": "翻译者",
 	"mineandslashexpansion.advancement.title.support": "去Discord寻求帮助",
+	"mineandslashexpansion.advancement.title.blamesroot": "I Blame You",
+	"mineandslashexpansion.advancement.title.blames1": "Who to blame",
 
 
 
 	"mineandslashexpansion.advancement.desc.welcomeeveryone": "欢迎游玩 Mine and Slash - Expansion",
-	"mineandslashexpansion.advancement.desc.version": "1.2.6.17",
+	"mineandslashexpansion.advancement.desc.version": "1.2.8.19",
 	"mineandslashexpansion.advancement.desc.artistsroot": "这些是帮助过作者的人",
 	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
 	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
@@ -105,6 +136,13 @@
 	"mineandslashexpansion.advancement.desc.coder1": "TheRealM18",
 	"mineandslashexpansion.advancement.desc.support": "YSYMcMb"
 	"mineandslashexpansion.advancement.desc.translatorsroot"": "这是mod的翻译者",
-	"mineandslashexpansion.advancement.desc.translator1": "yuwanjun564"
+	"mineandslashexpansion.advancement.desc.translator1": "yuwanjun564",
+	"mineandslashexpansion.advancement.desc.blamesroot": "Bye Bye Easy Tools",
+	"mineandslashexpansion.advancement.desc.blame1": "Blame my Dev server for this one",
+	
+	
+	"itemGroup.mineandslashexpansion_dnu": "Mine and Slash - Expansion Experimentals",
+	"itemGroup.mineandslashexpansion_tools": "Mine and Slash - Expansion Tools",
+	"itemGroup.mineandslashexpansion_ingedients": "Mine and Slash - Expansion Ingedients"
 
 }
