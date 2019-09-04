@@ -3,6 +3,7 @@ package com.therealm18.mineandslash.expansion.database.items.tools;
 import java.util.Set;
 
 import com.google.common.collect.ImmutableSet;
+import com.therealm18.mineandslash.expansion.database.items.ConfigurateTools;
 import com.therealm18.mineandslash.expansion.database.items.ToolsFuntion;
 
 import net.minecraft.block.Block;
@@ -29,7 +30,7 @@ public class Hammer extends PickaxeItem {
 
     @Override
     public boolean onBlockDestroyed(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity entityLiving) {
-
+    	
         if (entityLiving instanceof PlayerEntity)
             ToolsFuntion.attemptBreakNeighbors(world, pos, (PlayerEntity) entityLiving, EFFECTIVE_ON, EFFECTIVE_MATERIALS, true);
 
