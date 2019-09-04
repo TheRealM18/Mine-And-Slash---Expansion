@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/hammerroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:uncommonhammer"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.hammeruncommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.hammeruncommon"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:uncommonhammer"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:mythicalhammer"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.welcomeachievementget"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.welcomeachievementget"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

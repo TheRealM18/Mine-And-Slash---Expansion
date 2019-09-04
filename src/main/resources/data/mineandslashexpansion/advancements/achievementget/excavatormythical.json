@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/excavatorroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:mythicalexcavator"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.excavatormythical"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.excavatormythical"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:mythicalexcavator"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

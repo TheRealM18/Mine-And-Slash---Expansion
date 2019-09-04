@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/pickaxeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:mythicalpickaxe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.pickaxemythical"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.pickaxemythical"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:mythicalpickaxe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

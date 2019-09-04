@@ -1,0 +1,25 @@
+{
+	"parent": "mineandslashexpansion:achievementget/root",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:commonhoe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.hoeroot"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.hoeroot"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+            }
+    },
+    "requirements": [
+        ["tick"]
+    ]
+}

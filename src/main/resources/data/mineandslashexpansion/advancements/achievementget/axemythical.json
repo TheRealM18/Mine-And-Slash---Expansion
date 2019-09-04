@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/axeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:mythicalaxe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.axemythical"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.axemythical"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:mythicalaxe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/shovelroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:uncommonshovel"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.shoveluncommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.shoveluncommon"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:uncommonshovel"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

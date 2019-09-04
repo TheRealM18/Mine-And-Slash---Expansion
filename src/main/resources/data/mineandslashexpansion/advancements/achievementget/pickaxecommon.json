@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/pickaxeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:commonpickaxe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.pickaxecommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.pickaxecommon"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:commonpickaxe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

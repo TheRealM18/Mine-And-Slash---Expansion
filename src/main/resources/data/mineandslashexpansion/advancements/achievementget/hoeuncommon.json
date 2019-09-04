@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/hoeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:uncommonhoe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.hoeuncommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.hoeuncommon"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:uncommonhoe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

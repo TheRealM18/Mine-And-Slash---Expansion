@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/excavatorroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:commonexcavator"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.excavatorcommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.excavatorcommon"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:commonexcavator"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

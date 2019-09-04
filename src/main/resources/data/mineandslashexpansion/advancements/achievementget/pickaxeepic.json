@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/pickaxeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:epicpickaxe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.pickaxeepic"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.pickaxeepic"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:epicpickaxe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/hoeroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:epichoe"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.hoeepic"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.hoeepic"
+        },
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:epichoe"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}
