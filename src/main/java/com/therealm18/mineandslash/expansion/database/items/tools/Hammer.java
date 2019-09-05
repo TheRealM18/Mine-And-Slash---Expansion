@@ -3,8 +3,8 @@ package com.therealm18.mineandslash.expansion.database.items.tools;
 import java.util.Set;
 
 import com.google.common.collect.ImmutableSet;
-import com.therealm18.mineandslash.expansion.database.items.ConfigurateTools;
-import com.therealm18.mineandslash.expansion.database.items.ToolsFuntion;
+import com.therealm18.mineandslash.expansion.database.items.funtions.normal.ConfigurateTools;
+import com.therealm18.mineandslash.expansion.database.items.funtions.normal.ToolsFuntion;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

@@ -5,7 +5,7 @@ import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.inventory.EquipmentSlotType;
 
-public class LootBonusEnchantment extends Enchantment {
+public class LootBonusEnchantment extends net.minecraft.enchantment.LootBonusEnchantment {
    public LootBonusEnchantment(Enchantment.Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType... slots) {
       super(rarityIn, typeIn, slots);
    }

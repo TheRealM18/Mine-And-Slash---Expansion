@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.database.items;
+package com.therealm18.mineandslash.expansion.database.items.funtions.normal;
 
 
 import net.minecraft.block.Block;
@@ -16,26 +16,22 @@ import net.minecraft.world.World;
 import java.util.Random;
 import java.util.Set;
 
+import com.therealm18.mineandslash.expansion.registry.EnchantmentReferance;
+
 public class ToolsFuntion {
 
     public static final Random random = new Random();
 
-    public static void attemptBreakNeighbors(World world,
-                                             BlockPos pos,
-                                             PlayerEntity player,
-                                             Set<Block> effectiveOn,
-                                             Set<Material> effectiveMaterials,
-                                             boolean checkHarvestLevel) {
+    public static void attemptBreakNeighbors(World world, BlockPos pos, PlayerEntity player, Set<Block> effectiveOn, Set<Material> effectiveMaterials, boolean checkHarvestLevel) {
 
         world.setBlockState(pos, Blocks.GLASS.getDefaultState());
         RayTraceResult trace = calcRayTrace(world, player, RayTraceContext.FluidMode.ANY);
-        world.setBlockState(pos, Blocks.AIR.getDefaultState());
 
         if (trace.getType() == RayTraceResult.Type.BLOCK) {
             BlockRayTraceResult blockTrace = (BlockRayTraceResult) trace;
             Direction face = blockTrace.getFace();
 
-            int fortuneLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE, player.getHeldItemMainhand());
+            int masefortuneLevel = EnchantmentHelper.getEnchantmentLevel(EnchantmentReferance.FORTURE, player.getHeldItemMainhand());
             int silkLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH, player.getHeldItemMainhand());
 
             for (int a = -1; a <= 1; a++) {
@@ -47,21 +43,14 @@ public class ToolsFuntion {
                     if (face == Direction.UP    || face == Direction.DOWN)  target = pos.add(a, 0, b);
                     if (face == Direction.NORTH || face == Direction.SOUTH) target = pos.add(a, b, 0);
                     if (face == Direction.EAST  || face == Direction.WEST)  target = pos.add(0, a, b);
-
-                    attemptBreak(world, target, player, effectiveOn, effectiveMaterials, fortuneLevel, silkLevel, checkHarvestLevel);
+                    
+                    attemptBreak(world, target, player, effectiveOn, effectiveMaterials, masefortuneLevel, silkLevel, checkHarvestLevel);
                 }
             }
         }
     }
 
-    public static void attemptBreak(World world,
-                                    BlockPos pos,
-                                    PlayerEntity player,
-                                    Set<Block> effectiveOn,
-                                    Set<Material> effectiveMaterials,
-                                    int fortuneLevel,
-                                    int silkLevel,
-                                    boolean checkHarvestLevel) {
+    public static void attemptBreak(World world, BlockPos pos, PlayerEntity player, Set<Block> effectiveOn, Set<Material> effectiveMaterials, int masefortuneLevel, int silkLevel, boolean checkHarvestLevel) {
         BlockState state = world.getBlockState(pos);
 
         boolean validHarvest = !checkHarvestLevel || player.getHeldItemMainhand().canHarvestBlock(state);
@@ -72,7 +61,7 @@ public class ToolsFuntion {
             world.destroyBlock(pos, false);
             Block.spawnDrops(state, world, pos, null, player, player.getHeldItemMainhand());
 
-            int exp = state.getExpDrop(world, pos, fortuneLevel, silkLevel);
+            int exp = state.getExpDrop(world, pos, masefortuneLevel, silkLevel);
             if (exp > 0) {
                 state.getBlock().dropXpOnBlockBreak(world, pos, exp);
             }

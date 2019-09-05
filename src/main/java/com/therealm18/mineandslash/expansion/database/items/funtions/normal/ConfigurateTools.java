@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.database.items;
+package com.therealm18.mineandslash.expansion.database.items.funtions.normal;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

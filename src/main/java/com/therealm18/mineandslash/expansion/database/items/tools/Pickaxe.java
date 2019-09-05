@@ -7,6 +7,6 @@ public class Pickaxe extends PickaxeItem{
 
 	public Pickaxe(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
 		super(tier, attackDamageIn, attackSpeedIn, builder);
+		;
 	}
-
 }
