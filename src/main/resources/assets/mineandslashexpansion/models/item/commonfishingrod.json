@@ -1,0 +1,14 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "mineandslashexpansion:items/tools/fishingrod/common"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "cast": 1
+            },
+            "model": "mineandslashexpansion:item/commonfishingrod_cast"
+        }
+    ]
+}

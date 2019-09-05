@@ -1,0 +1,33 @@
+{
+	"parent": "mineandslashexpansion:achievementget/fishingrodroot",
+	
+    "display": {
+        "icon": {
+            "item": "mineandslashexpansion:commonfishingrod"
+        },
+        "title": {
+            "translate": "mineandslashexpansion.advancement.title.fishingrodcommon"
+        },
+        "description": {
+            "translate": "mineandslashexpansion.advancement.desc.fishingrodcommon"
+        },
+        "show_toast": false,
+        "announce_to_chat": true
+    },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "mineandslashexpansion:commonfishingrod"
+        },
+        "durability": 0
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broke_hoe"
+    ]
+  ]
+}

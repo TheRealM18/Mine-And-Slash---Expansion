@@ -3,13 +3,13 @@
 	
     "display": {
         "icon": {
-            "item": "mineandslashexpansion:commonexcavator"
+            "item": "mineandslashexpansion:commonfishingrod"
         },
         "title": {
-            "translate": "mineandslashexpansion.advancement.title.excavatorroot"
+            "translate": "mineandslashexpansion.advancement.title.fishingrodroot"
         },
         "description": {
-            "translate": "mineandslashexpansion.advancement.desc.excavatorroot"
+            "translate": "mineandslashexpansion.advancement.desc.fishingrodroot"
         },
         "show_toast": true,
         "announce_to_chat": false

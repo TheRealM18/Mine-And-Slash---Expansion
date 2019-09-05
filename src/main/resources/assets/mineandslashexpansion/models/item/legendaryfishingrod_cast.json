@@ -1,0 +1,6 @@
+{
+    "parent": "item/fishing_rod",
+    "textures": {
+        "layer0": "mineandslashexpansion:items/tools/fishingrod_cast/legendary"
+    }
+}

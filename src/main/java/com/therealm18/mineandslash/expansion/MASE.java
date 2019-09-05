@@ -45,6 +45,7 @@ import com.therealm18.mineandslash.expansion.database.items.spell_items.self.Ite
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
 import com.therealm18.mineandslash.expansion.database.items.tools.Axe;
 import com.therealm18.mineandslash.expansion.database.items.tools.Excavator;
+import com.therealm18.mineandslash.expansion.database.items.tools.FishingRod;
 import com.therealm18.mineandslash.expansion.database.items.tools.Hammer;
 import com.therealm18.mineandslash.expansion.database.items.tools.Hoe;
 import com.therealm18.mineandslash.expansion.database.items.tools.Pickaxe;
@@ -202,6 +203,14 @@ public class MASE
     		event.getRegistry().register(new Excavator(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavator"));
+    		
+    		
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(128).maxStackSize(1)).setRegistryName("commonfishingrod"));
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(256).maxStackSize(1)).setRegistryName("uncommonfishingrod"));
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(512).maxStackSize(1)).setRegistryName("rarefishingrod"));
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(1024).maxStackSize(1)).setRegistryName("epicfishingrod"));
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(2048).maxStackSize(1)).setRegistryName("legendaryfishingrod"));
+    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(4096).maxStackSize(1)).setRegistryName("mythicalfishingrod"));
     		
     		
     		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoningot"));
