@@ -1,6 +1,6 @@
 {
-    "parent": "item/generic",
+    "parent": "item/generated",
     "textures": {
-        "layer0": "mineandslashexpansion:items/ingedents/ingot/common"
+        "layer0": "mineandslashexpansion:items/ingredents/mixedingots/legendary"
     }
 }
