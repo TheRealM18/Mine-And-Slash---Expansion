@@ -1,5 +1,5 @@
 {
-	"parent": "mineandslashexpansion:achievementget/axeroot",
+	"parent": "mineandslashexpansion:achievementget/axerare",
 	
     "display": {
         "icon": {
@@ -11,8 +11,8 @@
         "description": {
             "translate": "mineandslashexpansion.advancement.desc.axeepic"
         },
-        "show_toast": true,
-        "announce_to_chat": false
+        "show_toast": false,
+        "announce_to_chat": true
     },
   "criteria": {
     "broke_hoe": {

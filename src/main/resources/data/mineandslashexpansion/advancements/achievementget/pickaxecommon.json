@@ -11,8 +11,8 @@
         "description": {
             "translate": "mineandslashexpansion.advancement.desc.pickaxecommon"
         },
-        "show_toast": true,
-        "announce_to_chat": false
+        "show_toast": false,
+        "announce_to_chat": true
     },
   "criteria": {
     "broke_hoe": {
