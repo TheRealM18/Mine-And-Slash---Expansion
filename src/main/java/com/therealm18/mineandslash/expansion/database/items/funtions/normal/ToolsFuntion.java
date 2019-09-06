@@ -38,7 +38,7 @@ public class ToolsFuntion {
                 for (int b = -1; b <= 1; b++) {
                     if (a == 0 && b == 0) continue;
 
-                    BlockPos target = null;
+                    BlockPos target = new BlockPos(1.0F, 1.0F, 1.0F);
 
                     if (face == Direction.UP    || face == Direction.DOWN)  target = pos.add(a, 0, b);
                     if (face == Direction.NORTH || face == Direction.SOUTH) target = pos.add(a, b, 0);
@@ -74,7 +74,7 @@ public class ToolsFuntion {
         Vec3d vec3d = player.getEyePosition(1.0F);
         float f2 = MathHelper.cos(-f1 * ((float)Math.PI / 180F) - (float)Math.PI);
         float f3 = MathHelper.sin(-f1 * ((float)Math.PI / 180F) - (float)Math.PI);
-        float f4 = MathHelper.cos(-f * ((float)Math.PI / 180F));
+        float f4 = -MathHelper.cos(-f * ((float)Math.PI / 180F));
         float f5 = MathHelper.sin(-f * ((float)Math.PI / 180F));
         float f6 = f3 * f4;
         float f7 = f2 * f4;
