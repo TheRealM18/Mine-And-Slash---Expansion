@@ -3,8 +3,7 @@ package com.therealm18.mineandslash.expansion.database.items.tools;
 import java.util.Set;
 
 import com.google.common.collect.ImmutableSet;
-import com.therealm18.mineandslash.expansion.database.items.funtions.normal.ConfigurateTools;
-import com.therealm18.mineandslash.expansion.database.items.funtions.normal.ToolsFuntion;
+import com.therealm18.mineandslash.expansion.database.items.funtions.normal.ToolsFuntionNormal;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -32,7 +31,7 @@ public class Excavator extends ShovelItem {
     public boolean onBlockDestroyed(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity entityLiving) {
     	
         if (entityLiving instanceof PlayerEntity)
-            ToolsFuntion.attemptBreakNeighbors(world, pos, (PlayerEntity) entityLiving, EFFECTIVE_ON, EFFECTIVE_MATERIALS, false);
+            ToolsFuntionNormal.attemptBreakNeighbors(world, pos, (PlayerEntity) entityLiving, EFFECTIVE_ON, EFFECTIVE_MATERIALS, false);
 
         return super.onBlockDestroyed(stack, world, state, pos, entityLiving);
     }

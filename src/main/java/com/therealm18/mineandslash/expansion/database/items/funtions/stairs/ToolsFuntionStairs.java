@@ -1,4 +1,4 @@
-package com.therealm18.mineandslash.expansion.database.items.funtions.normal;
+package com.therealm18.mineandslash.expansion.database.items.funtions.stairs;
 
 
 import net.minecraft.block.Block;
@@ -18,7 +18,7 @@ import java.util.Set;
 
 import com.therealm18.mineandslash.expansion.registry.EnchantmentReferance;
 
-public class ToolsFuntion {
+public class ToolsFuntionStairs {
 
     public static final Random random = new Random();
 
@@ -35,7 +35,7 @@ public class ToolsFuntion {
             int silkLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH, player.getHeldItemMainhand());
 
             for (int a = -1; a <= 1; a++) {
-                for (int b = -1; b <= 1; b++) {
+                for (int b = -2; b <= 2; b++) {
                     if (a == 0 && b == 0) continue;
 
                     BlockPos target = new BlockPos(1.0F, 1.0F, 1.0F);

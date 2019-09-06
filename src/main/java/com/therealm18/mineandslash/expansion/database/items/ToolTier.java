@@ -26,6 +26,15 @@ public enum ToolTier implements IItemTier {
 	   }),
    MYTHICAL(5, 4096, 24.0F, 32.0F, 30, () -> {
 	      return Ingredient.fromItems(Blocks.AIR);
+	   }),
+   UNOMMON(7, 8192, 28.0F, 64.0F, 30, () -> {
+	      return Ingredient.fromItems(Blocks.AIR);
+	   }),
+   BLAM(8, -1, 32.0F, 100.0F, 30, () -> {
+	      return Ingredient.fromItems(Blocks.AIR);
+	   }),
+   Ultimate(9, -1, 64.0F, 1000.0F, 30, () -> {
+	      return Ingredient.fromItems(Blocks.AIR);
 	   });
 
    private final int harvestLevel;

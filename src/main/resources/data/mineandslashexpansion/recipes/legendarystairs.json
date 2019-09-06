@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XHX",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "H": {
+      "item": "mineandslashexpansion:legendaryhammer"
+    },
+    "X": {
+      "item": "mineandslashexpansion:legendarycompressedingot"
+    }
+  },
+  "result": {
+    "item": "mineandslashexpansion:legendarystairs"
+  }
+}
