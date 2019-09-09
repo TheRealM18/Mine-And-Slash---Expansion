@@ -65,14 +65,14 @@ public abstract class BaseChestBlock extends ChestBlock {
 
     }
 
-//    @Nonnull
-//    public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player,
-//                                                    @Nonnull Hand hand) {
-//        if (!world.isRemote) {
-//                player.openContainer(getNamedContainer(player.getHeldItemMainhand()));
-//        }
-//        return ActionResult.newResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-//    }
+    @Nonnull
+    public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player,
+                                                    @Nonnull Hand hand) {
+        if (!world.isRemote) {
+                player.openContainer(getNamedContainer(player.getHeldItemMainhand()));
+        }
+        return ActionResult.newResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
+    }
 
     public IItemHandler getInventory(ItemStack bag, ItemStack stack) {
 
