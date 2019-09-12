@@ -1,8 +1,6 @@
 package com.therealm18.mineandslash.expansion.registry;
 
 import com.therealm18.mineandslash.expansion.Ref;
-import com.therealm18.mineandslash.expansion.database.items.parts.Heads;
-import com.therealm18.mineandslash.expansion.database.items.parts.Rods;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;

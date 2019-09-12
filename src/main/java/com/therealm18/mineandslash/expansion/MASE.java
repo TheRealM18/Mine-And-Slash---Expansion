@@ -26,7 +26,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
-import com.therealm18.mineandslash.expansion.database.items.generic.Ingot;
+import com.therealm18.mineandslash.expansion.database.items.generic.Items;
 import com.therealm18.mineandslash.expansion.database.items.levels.ToolTier;
 import com.therealm18.mineandslash.expansion.database.items.spells.SelfBreath;
 import com.therealm18.mineandslash.expansion.database.items.spells.SelfFeatherFalling;
@@ -39,15 +39,15 @@ import com.therealm18.mineandslash.expansion.database.items.spells.SelfSpeed;
 import com.therealm18.mineandslash.expansion.db_old.blocks.chest.master_chest.MasterChestBlock;
 import com.therealm18.mineandslash.expansion.db_old.blocks.creative.SalvageStationCreative;
 import com.therealm18.mineandslash.expansion.db_old.blocks.creative.SalvageStationCreativeTile;
-import com.therealm18.mineandslash.expansion.old.items.tools.Axe;
-import com.therealm18.mineandslash.expansion.old.items.tools.Excavator;
-import com.therealm18.mineandslash.expansion.old.items.tools.FishingRod;
-import com.therealm18.mineandslash.expansion.old.items.tools.Hamavator;
-import com.therealm18.mineandslash.expansion.old.items.tools.Hammer;
-import com.therealm18.mineandslash.expansion.old.items.tools.Hoe;
-import com.therealm18.mineandslash.expansion.old.items.tools.Pickaxe;
-import com.therealm18.mineandslash.expansion.old.items.tools.Shovel;
-import com.therealm18.mineandslash.expansion.old.items.tools.Stairs;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Axe;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Excavator;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.FishingRod;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Hamavator;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Hammer;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Hoe;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Pickaxe;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Shovel;
+import com.therealm18.mineandslash.expansion.depricated.items.tools.Stairs;
 import com.therealm18.mineandslash.expansion.registry.BlockReferance;
 
 @Mod("mineandslashexpansion")
@@ -242,36 +242,36 @@ public class MASE
     		event.getRegistry().register(new Item(new Item.Properties().group(Parts).maxStackSize(1)).setRegistryName("binding"));
     		
     		
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoningot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoningot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rareingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoningot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoningot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rareingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalingot"));
     		
     		
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commonmixedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommonmixedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("raremixedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicmixedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarymixedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalmixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commonmixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommonmixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("raremixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicmixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarymixedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalmixedingot"));
     		
     		
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoncompressedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoncompressedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rarecompressedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epiccompressedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarycompressedingot"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalcompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoncompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommoncompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rarecompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epiccompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendarycompressedingot"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalcompressedingot"));
     		
     		
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commonshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommonshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rareshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commonshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("uncommonshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("rareshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryshard"));
+    		event.getRegistry().register(new Items(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalshard"));
     		
     		
     		//Enchantments

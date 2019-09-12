@@ -13,6 +13,29 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+repositories {
+    flatDir {
+        name "fileRepo"
+        dirs "repo"
+    }
+    mavenLocal()
+    jcenter()
+}
+
+lombok {
+    version = '1.18.4'
+    sha256 = ""
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.compilerArgs = ['-Xlint:deprecation']
+}
+
+javadoc {
+    failOnError = false
+}
+
 version = '1.3.1.27'
 group = 'com.therealm18.mineandslashexpansion' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Mine and Slash - Expansion'

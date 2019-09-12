@@ -16,8 +16,6 @@ import net.minecraft.world.World;
 import java.util.Random;
 import java.util.Set;
 
-import com.therealm18.mineandslash.expansion.registry.EnchantmentReferance;
-
 public class ToolsFuntionStairs {
 
     public static final Random random = new Random();
@@ -31,7 +29,7 @@ public class ToolsFuntionStairs {
             BlockRayTraceResult blockTrace = (BlockRayTraceResult) trace;
             Direction face = blockTrace.getFace();
 
-            int masefortuneLevel = EnchantmentHelper.getEnchantmentLevel(EnchantmentReferance.FORTURE, player.getHeldItemMainhand());
+            int masefortuneLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE, player.getHeldItemMainhand());
             int silkLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH, player.getHeldItemMainhand());
 
             for (int a = -1; a <= 1; a++) {
