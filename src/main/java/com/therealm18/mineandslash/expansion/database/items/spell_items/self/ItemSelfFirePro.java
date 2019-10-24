@@ -4,7 +4,6 @@ import com.robertx22.mine_and_slash.database.items.spell_items.BaseSpellItem;
 import com.robertx22.mine_and_slash.database.spells.bases.BaseSpell;
 import com.therealm18.mineandslash.expansion.Ref;
 import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfFirePro;
-import com.therealm18.mineandslash.expansion.database.spells.self.SpellSelfNightVision;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;

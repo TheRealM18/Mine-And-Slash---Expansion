@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.2.15.26'
+version = '1.4.1.29'
 group = 'com.therealm18.mineandslashexpansion' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Mine and Slash - Expansion'
 
@@ -89,14 +89,14 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.14.4-28.0.45'
+    minecraft 'net.minecraftforge:forge:1.14.4-28.1.0'
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
 
-    compile fg.deobf(files("libs/curios-FORGE-1.14.4-0.21-deobf.jar"))
-    compile fg.deobf(files("libs/Mine_and_Slash-1.14.4-2.4.7.jar"))
+    compile fg.deobf(files("libs/curios-FORGE-1.14.4-1.0-deobf.jar"))
+    compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.6.3-deobf.jar"))
 	
     // Real examples
     // compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env

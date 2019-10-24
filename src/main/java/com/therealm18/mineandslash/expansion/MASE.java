@@ -153,9 +153,9 @@ public class MASE
     		event.getRegistry().register(new ItemSelfBreath());
     		event.getRegistry().register(new ItemSelfFirePro());
     		
-    		//Blocks
-    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
-    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.MASTER_CHEST));
+//    		//Blocks
+//    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+//    		event.getRegistry().register(new BlockItem(BlockReferance.BLOCK_MASTER_CHEST, new Item.Properties().group(DNU)).setRegistryName(BlockReferance.MASTER_CHEST));
     		
     		
     		//Tools
@@ -165,8 +165,8 @@ public class MASE
     		event.getRegistry().register(new Pickaxe(ToolTier.EPIC, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epicpickaxe"));
     		event.getRegistry().register(new Pickaxe(ToolTier.LEGENDARY, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendarypickaxe"));
     		event.getRegistry().register(new Pickaxe(ToolTier.MYTHICAL, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalpickaxe"));
-    		event.getRegistry().register(new Pickaxe(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonpickaxe"));
-    		event.getRegistry().register(new Pickaxe(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blampickaxe"));
+//    		event.getRegistry().register(new Pickaxe(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonpickaxe"));
+//    		event.getRegistry().register(new Pickaxe(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blampickaxe"));
     		
 
     		event.getRegistry().register(new Axe(ToolTier.COMMON, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("commonaxe"));
@@ -175,8 +175,8 @@ public class MASE
     		event.getRegistry().register(new Axe(ToolTier.EPIC, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("epicaxe"));
     		event.getRegistry().register(new Axe(ToolTier.LEGENDARY, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("legendaryaxe"));
     		event.getRegistry().register(new Axe(ToolTier.MYTHICAL, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("mythicalaxe"));
-    		event.getRegistry().register(new Axe(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("unommonaxe"));
-    		event.getRegistry().register(new Axe(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("blamaxe"));
+//    		event.getRegistry().register(new Axe(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("unommonaxe"));
+//    		event.getRegistry().register(new Axe(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.AXE, 0).maxStackSize(1)).setRegistryName("blamaxe"));
     		
 
     		event.getRegistry().register(new Hoe(ToolTier.COMMON, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonhoe"));
@@ -185,8 +185,8 @@ public class MASE
     		event.getRegistry().register(new Hoe(ToolTier.EPIC, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epichoe"));
     		event.getRegistry().register(new Hoe(ToolTier.LEGENDARY, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendaryhoe"));
     		event.getRegistry().register(new Hoe(ToolTier.MYTHICAL, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalhoe"));
-    		event.getRegistry().register(new Hoe(ToolTier.UNOMMON, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhoe"));
-    		event.getRegistry().register(new Hoe(ToolTier.BLAM, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhoe"));
+//    		event.getRegistry().register(new Hoe(ToolTier.UNOMMON, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhoe"));
+//    		event.getRegistry().register(new Hoe(ToolTier.BLAM, 1, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhoe"));
     		
 
     		event.getRegistry().register(new Shovel(ToolTier.COMMON, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("commonshovel"));
@@ -195,8 +195,8 @@ public class MASE
     		event.getRegistry().register(new Shovel(ToolTier.EPIC, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicshovel"));
     		event.getRegistry().register(new Shovel(ToolTier.LEGENDARY, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryshovel"));
     		event.getRegistry().register(new Shovel(ToolTier.MYTHICAL, 1, 1F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalshovel"));
-    		event.getRegistry().register(new Shovel(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonshovel"));
-    		event.getRegistry().register(new Shovel(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamshovel"));
+//    		event.getRegistry().register(new Shovel(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonshovel"));
+//    		event.getRegistry().register(new Shovel(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamshovel"));
 
     		
     		event.getRegistry().register(new Hammer(ToolTier.COMMON, 1, 1.5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonhammer"));
@@ -205,8 +205,8 @@ public class MASE
     		event.getRegistry().register(new Hammer(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epichammer"));
     		event.getRegistry().register(new Hammer(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendaryhammer"));
     		event.getRegistry().register(new Hammer(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalhammer"));
-    		event.getRegistry().register(new Hammer(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhammer"));
-    		event.getRegistry().register(new Hammer(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhammer"));
+//    		event.getRegistry().register(new Hammer(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhammer"));
+//    		event.getRegistry().register(new Hammer(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhammer"));
     		
     		
     		event.getRegistry().register(new Excavator(ToolTier.COMMON, 1, 1.5F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("commonexcavator"));
@@ -215,8 +215,8 @@ public class MASE
     		event.getRegistry().register(new Excavator(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("epicexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("legendaryexcavator"));
     		event.getRegistry().register(new Excavator(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.SHOVEL, 0).maxStackSize(1)).setRegistryName("mythicalexcavator"));
-    		event.getRegistry().register(new Excavator(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonexcavator"));
-    		event.getRegistry().register(new Excavator(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamexcavator"));
+//    		event.getRegistry().register(new Excavator(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonexcavator"));
+//    		event.getRegistry().register(new Excavator(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamexcavator"));
 
     		
     		event.getRegistry().register(new Stairs(ToolTier.COMMON, 1, 1.5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonstairs"));
@@ -225,8 +225,8 @@ public class MASE
     		event.getRegistry().register(new Stairs(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epicstairs"));
     		event.getRegistry().register(new Stairs(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendarystairs"));
     		event.getRegistry().register(new Stairs(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalstairs"));
-    		event.getRegistry().register(new Stairs(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonstairs"));
-    		event.getRegistry().register(new Stairs(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamstairs"));
+//    		event.getRegistry().register(new Stairs(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonstairs"));
+//    		event.getRegistry().register(new Stairs(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamstairs"));
 
     		
     		event.getRegistry().register(new Hamavator(ToolTier.COMMON, 1, 1.5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("commonhamavator"));
@@ -235,8 +235,8 @@ public class MASE
     		event.getRegistry().register(new Hamavator(ToolTier.EPIC, 1, 1.8F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("epichamavator"));
     		event.getRegistry().register(new Hamavator(ToolTier.LEGENDARY, 1, 1.9F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("legendaryhamavator"));
     		event.getRegistry().register(new Hamavator(ToolTier.MYTHICAL, 1, 2F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("mythicalhamavator"));
-    		event.getRegistry().register(new Hamavator(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhamavator"));
-    		event.getRegistry().register(new Hamavator(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhamavator"));
+//    		event.getRegistry().register(new Hamavator(ToolTier.UNOMMON, 1, 3F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("unommonhamavator"));
+//    		event.getRegistry().register(new Hamavator(ToolTier.BLAM, 1, 5F, new Item.Properties().group(Tools).addToolType(ToolType.PICKAXE, 0).maxStackSize(1)).setRegistryName("blamhamavator"));
     		
     		
     		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(128)).setRegistryName("commonfishingrod"));
@@ -245,8 +245,8 @@ public class MASE
     		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(1024)).setRegistryName("epicfishingrod"));
     		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(2048)).setRegistryName("legendaryfishingrod"));
     		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(4096)).setRegistryName("mythicalfishingrod"));
-    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(8196)).setRegistryName("unommonfishingrod"));
-    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(-1)).setRegistryName("blamfishingrod"));
+//    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(8196)).setRegistryName("unommonfishingrod"));
+//    		event.getRegistry().register(new FishingRod(new Item.Properties().group(Tools).maxDamage(-1)).setRegistryName("blamfishingrod"));
     		
     		
     		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("commoningot"));
@@ -279,8 +279,8 @@ public class MASE
     		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("epicshard"));
     		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("legendaryshard"));
     		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("mythicalshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("unommonshard"));
-    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(1)).setRegistryName("blamshard"));
+//    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(32)).setRegistryName("unommonshard"));
+//    		event.getRegistry().register(new Ingot(new Item.Properties().group(Ingrediants).maxStackSize(1)).setRegistryName("blamshard"));
     		
     		
     		//Enchantments
@@ -293,13 +293,13 @@ public class MASE
     	
         @SubscribeEvent
         public static void registerBlocks(final RegistryEvent.Register<Block> event) {
-        	event.getRegistry().register(new SalvageStationCreative().setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
-        	event.getRegistry().register(new MasterChestBlock().setRegistryName(BlockReferance.MASTER_CHEST));
+//        	event.getRegistry().register(new SalvageStationCreative().setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+//        	event.getRegistry().register(new MasterChestBlock().setRegistryName(BlockReferance.MASTER_CHEST));
         }
         
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
-        	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
+//        	event.getRegistry().register(TileEntityType.Builder.create(SalvageStationCreativeTile::new, BlockReferance.BLOCK_GEAR_SALVAGE_CREATIVE).build(null).setRegistryName(BlockReferance.GEAR_SALVAGE_CREATIVE));
 //        	event.getRegistry().register(TileEntityType.Builder.create(MasterChestTile::new, BlockReferance.BLOCK_MASTER_CHEST).build(null).setRegistryName(BlockReferance.MASTER_CHEST));
         }
         
@@ -310,9 +310,9 @@ public class MASE
         
         @SubscribeEvent
         public static void registerEnchantments(final RegistryEvent.Register<Enchantment> event) {
-        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.DIGGER, EquipmentSlotType.MAINHAND).setRegistryName("fortune"));
-        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.FISHING_ROD, EquipmentSlotType.MAINHAND).setRegistryName("luck_of_the_sea"));
-        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.WEAPON, EquipmentSlotType.MAINHAND).setRegistryName("looting"));
+//        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.DIGGER, EquipmentSlotType.MAINHAND).setRegistryName("fortune"));
+//        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.FISHING_ROD, EquipmentSlotType.MAINHAND).setRegistryName("luck_of_the_sea"));
+//        	event.getRegistry().register(new LootBonusEnchantment(Rarity.VERY_RARE, EnchantmentType.WEAPON, EquipmentSlotType.MAINHAND).setRegistryName("looting"));
         }
     }
 }

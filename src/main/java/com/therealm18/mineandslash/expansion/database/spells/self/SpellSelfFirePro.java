@@ -6,7 +6,6 @@ import com.robertx22.mine_and_slash.saveclasses.item_classes.SpellItemData;
 import com.robertx22.mine_and_slash.uncommon.enumclasses.Elements;
 import com.robertx22.mine_and_slash.uncommon.localization.CLOC;
 import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfFirePro;
-import com.therealm18.mineandslash.expansion.database.items.spell_items.self.ItemSelfSpeed;
 import com.therealm18.mineandslash.expansion.database.stats.stat_types.Speed;
 
 import net.minecraft.entity.player.PlayerEntity;

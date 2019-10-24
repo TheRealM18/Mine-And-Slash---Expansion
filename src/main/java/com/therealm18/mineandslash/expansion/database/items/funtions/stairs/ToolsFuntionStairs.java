@@ -42,7 +42,7 @@ public class ToolsFuntionStairs {
 
                     if (face == Direction.UP    || face == Direction.DOWN)  target = pos.add(a, 0, b);
                     if (face == Direction.NORTH || face == Direction.SOUTH) target = pos.add(a, b, 0);
-                    if (face == Direction.EAST  || face == Direction.WEST)  target = pos.add(0, a, b);
+                    if (face == Direction.EAST  || face == Direction.WEST)  target = pos.add(0, b, a);
                     
                     attemptBreak(world, target, player, effectiveOn, effectiveMaterials, masefortuneLevel, silkLevel, checkHarvestLevel);
                 }

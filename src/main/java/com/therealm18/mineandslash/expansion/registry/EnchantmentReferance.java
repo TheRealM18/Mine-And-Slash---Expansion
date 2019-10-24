@@ -2,10 +2,7 @@ package com.therealm18.mineandslash.expansion.registry;
 
 import com.therealm18.mineandslash.expansion.Ref;
 
-import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.BlockItem;
-import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
 
 public class EnchantmentReferance {

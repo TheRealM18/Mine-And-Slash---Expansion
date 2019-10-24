@@ -58,6 +58,14 @@
 	"item.mineandslashexpansion.mythicalexcavator": "Mythical Excavator",
 	
 	
+	"item.mineandslashexpansion.commonstairs": "Common Hamavator",
+	"item.mineandslashexpansion.uncommonstairs": "Uncommon Hamavator",
+	"item.mineandslashexpansion.rarestairs": "Rare Hamavator",
+	"item.mineandslashexpansion.epicstairs": "Epic Hamavator",
+	"item.mineandslashexpansion.legendarystairs": "Legendary Hamavator",
+	"item.mineandslashexpansion.mythicalstairs": "Mythical Hamavator",
+	
+	
 	"item.mineandslashexpansion.commonfishingrod": "Common Fishing Rod",
 	"item.mineandslashexpansion.uncommonfishingrod": "Uncommon Fishing Rod",
 	"item.mineandslashexpansion.rarefishingrod": "Rare Fishing Rod",
@@ -110,11 +118,6 @@
 	"mmorpg.tooltip.spell_self_fireprotection": "Cast this spell to yourself",
 	
 	
-	"enchantment.mineandslashexpansion.luck_of_the_sea": "MASE Luck of the Sea",
-	"enchantment.mineandslashexpansion.looting": "MASE Looting",
-	"enchantment.mineandslashexpansion.fortune": "MASE Fortune",
-	
-	
 	"mineandslashexpansion.advancement.title.welcomeeveryone": "Mine and Slash - Expansion - Information",
 	"mineandslashexpansion.advancement.title.version": "Mod Version",
 	"mineandslashexpansion.advancement.title.artistsroot": "Artists",
@@ -132,7 +135,7 @@
 	
 	
 	"mineandslashexpansion.advancement.desc.welcomeeveryone": "Welcome Mine and Slash - Expansion",
-	"mineandslashexpansion.advancement.desc.version": "1.2.15.26",
+	"mineandslashexpansion.advancement.desc.version": "1.4.1.29",
 	"mineandslashexpansion.advancement.desc.artistsroot": "This are the artist that help out every day",
 	"mineandslashexpansion.advancement.desc.artist1": "Pojy",
 	"mineandslashexpansion.advancement.desc.artist2": "DreadMagusX1",
